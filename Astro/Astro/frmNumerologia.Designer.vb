@@ -31,7 +31,11 @@ Partial Class frmNumerologia
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblNumeroFinal = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -47,7 +51,7 @@ Partial Class frmNumerologia
         Me.Panel1.Controls.Add(Me.ComboBox1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(500, 163)
+        Me.Panel1.Size = New System.Drawing.Size(500, 118)
         Me.Panel1.TabIndex = 0
         '
         'ComboBox1
@@ -122,11 +126,41 @@ Partial Class frmNumerologia
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Escribe tu fecha de nacimiento para conocer tu número"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.lblNumeroFinal)
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Location = New System.Drawing.Point(12, 151)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(500, 223)
+        Me.Panel2.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(147, 35)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(89, 13)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Tu número es el: "
+        '
+        'lblNumeroFinal
+        '
+        Me.lblNumeroFinal.AutoSize = True
+        Me.lblNumeroFinal.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumeroFinal.Location = New System.Drawing.Point(233, 26)
+        Me.lblNumeroFinal.Name = "lblNumeroFinal"
+        Me.lblNumeroFinal.Size = New System.Drawing.Size(29, 31)
+        Me.lblNumeroFinal.TabIndex = 1
+        Me.lblNumeroFinal.Text = "0"
+        '
         'frmNumerologia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(527, 450)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmNumerologia"
@@ -134,6 +168,8 @@ Partial Class frmNumerologia
         Me.Text = "frmNumerologia"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -147,4 +183,7 @@ Partial Class frmNumerologia
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents lblNumeroFinal As Label
+    Friend WithEvents Label5 As Label
 End Class

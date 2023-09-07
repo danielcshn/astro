@@ -33,28 +33,32 @@
         numeroStr = ComboBox1.Text & verSignoDia(ComboBox2.Text).ToString & ComboBox3.Text
         'MsgBox(numeroStr)
 
-        Dim suma As Integer = 0
+        Dim input As String = numeroStr
+        Dim resultado As Integer = 0
 
-        For Each digito As Char In numeroStr
-            If Char.IsDigit(digito) Then
-                suma += CInt(digito.ToString())
+        ' Itera a través de cada carácter en el string
+        For Each c As Char In input
+            If Char.IsDigit(c) Then
+                ' Convierte el carácter en un número y suma al resultado
+                resultado += Integer.Parse(c.ToString())
+            Else
+                Console.WriteLine("El string contiene caracteres no numéricos.")
+                Exit Sub
             End If
         Next
 
-        Console.WriteLine("La suma de los números en el string es: " & suma)
+        ' Repite el proceso hasta obtener un solo dígito
+        While resultado >= 10
+            Dim nuevoResultado As Integer = 0
+            While resultado > 0
+                nuevoResultado += resultado Mod 10
+                resultado = resultado \ 10
+            End While
+            resultado = nuevoResultado
+        End While
 
-        Dim sumaFinal As Integer = 0
-
-        ' Convierte el resultado anterior en un string para sumar sus dígitos
-        Dim sumaStr As String = suma.ToString()
-
-        For Each digito As Char In sumaStr
-            If Char.IsDigit(digito) Then
-                sumaFinal += CInt(digito.ToString())
-            End If
-        Next
-
-        Console.WriteLine("La suma de los dígitos del resultado es: " & sumaFinal)
+        Console.WriteLine("El resultado final es: " & resultado)
+        lblNumeroFinal.Text = resultado
 
     End Sub
 
