@@ -134,8 +134,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCompatibilidad.resx">
+      <DependentUpon>frmCompatibilidad.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHoroscopo.resx">
       <DependentUpon>frmHoroscopo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoroscopoChino.resx">
+      <DependentUpon>frmHoroscopoChino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNumerologia.resx">
+      <DependentUpon>frmNumerologia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
