@@ -1,4 +1,6 @@
-﻿Public Class frmNumerologia
+﻿Imports HtmlAgilityPack
+
+Public Class frmNumerologia
 
     ' Referencia como sacar numero
     ' https://www.clarin.com/internacional/-saber-mision-vida-numerologia-_0_uB4yBKSXxr.html
@@ -30,7 +32,7 @@
 
         ' Calculo numero
         Dim numeroStr As String
-        numeroStr = ComboBox1.Text & verSignoDia(ComboBox2.Text).ToString & ComboBox3.Text
+        numeroStr = ComboBox1.Text & mesNumero(ComboBox2.Text).ToString & ComboBox3.Text
         'MsgBox(numeroStr)
 
         Dim input As String = numeroStr
@@ -60,9 +62,13 @@
         Console.WriteLine("El resultado final es: " & resultado)
         lblNumeroFinal.Text = resultado
 
+
+        txtPrediccion.Text = "Cargado Predicción Semanal..."
+        txtPrediccion.Text = verPrediccionSemanal(resultado)
+
     End Sub
 
-    Public Shared Function verSignoDia(ByVal mes As String) As Integer
+    Public Shared Function mesNumero(ByVal mes As String) As Integer
 
         Dim numeroMes As Integer
 
@@ -97,6 +103,38 @@
         End Select
 
         Return numeroMes
+    End Function
+
+    Public Shared Function verPrediccionSemanal(ByVal numero As String) As String
+
+        ' Predicción Semanal Fuente:
+        ' https://www.lavanguardia.com/horoscopo/numerologia-1
+
+        Dim url As String = "https://www.lavanguardia.com/horoscopo/numerologia-" + numero
+        Dim resultado As String = ""
+
+        Dim web As New HtmlWeb()
+        Dim doc As HtmlDocument = web.Load(url)
+
+        Dim xpathExpression As String = "//*[@id='main']/div/section[2]/div/div/ul/li[" + numero + "]/div/p"
+        Dim nodes As HtmlNodeCollection = doc.DocumentNode.SelectNodes(xpathExpression)
+
+        If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
+            For Each node As HtmlNode In nodes
+                Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
+                resultado = nodes(0).InnerHtml
+            Next
+        Else
+            Console.WriteLine("No matching nodes found.")
+        End If
+
+        If resultado.Length >= 4 Then
+            resultado = resultado.Substring(4)
+        Else
+            resultado = String.Empty
+        End If
+
+        Return resultado
     End Function
 
 End Class

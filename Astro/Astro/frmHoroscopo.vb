@@ -51,6 +51,9 @@ Public Class frmHoroscopo
 
     Public Shared Function verSignoDia(ByVal signoactual As String) As String
 
+        ' Horoscopo Diario Fuente:
+        ' https://www.lavanguardia.com/horoscopo/signos-zodiaco-cancer/horoscopo-diario
+
         Dim url As String = "https://www.lavanguardia.com/horoscopo/signos-zodiaco-" + signoactual + "/horoscopo-diario"
         Dim resultado As String = ""
 
@@ -68,10 +71,6 @@ Public Class frmHoroscopo
         Else
             Console.WriteLine("No matching nodes found.")
         End If
-
-        ' Traduccion al Español
-
-        'TextBox1.Text = resultado
 
         If resultado.Length >= 4 Then
             resultado = resultado.Substring(4)

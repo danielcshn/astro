@@ -34,6 +34,7 @@ Partial Class frmNumerologia
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblNumeroFinal = New System.Windows.Forms.Label()
+        Me.txtPrediccion = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -129,11 +130,12 @@ Partial Class frmNumerologia
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.txtPrediccion)
         Me.Panel2.Controls.Add(Me.lblNumeroFinal)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Location = New System.Drawing.Point(12, 151)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(500, 223)
+        Me.Panel2.Size = New System.Drawing.Size(500, 287)
         Me.Panel2.TabIndex = 1
         '
         'Label5
@@ -154,6 +156,15 @@ Partial Class frmNumerologia
         Me.lblNumeroFinal.Size = New System.Drawing.Size(29, 31)
         Me.lblNumeroFinal.TabIndex = 1
         Me.lblNumeroFinal.Text = "0"
+        '
+        'txtPrediccion
+        '
+        Me.txtPrediccion.Location = New System.Drawing.Point(23, 62)
+        Me.txtPrediccion.Multiline = True
+        Me.txtPrediccion.Name = "txtPrediccion"
+        Me.txtPrediccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtPrediccion.Size = New System.Drawing.Size(456, 204)
+        Me.txtPrediccion.TabIndex = 2
         '
         'frmNumerologia
         '
@@ -186,4 +197,5 @@ Partial Class frmNumerologia
     Friend WithEvents Panel2 As Panel
     Friend WithEvents lblNumeroFinal As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents txtPrediccion As TextBox
 End Class
