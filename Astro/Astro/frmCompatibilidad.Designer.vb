@@ -30,9 +30,11 @@ Partial Class frmCompatibilidad
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmCompatibilidad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmCompatibilidad"
+        Me.Text = "Compatibilidad entre signos"
         Me.ResumeLayout(False)
 
     End Sub

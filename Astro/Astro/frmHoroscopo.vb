@@ -1,51 +1,51 @@
 ﻿Imports HtmlAgilityPack
 
 Public Class frmHoroscopo
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btnAries_Click(sender As Object, e As EventArgs) Handles btnAries.Click
         TextBox1.Text = verSignoDia("aries")
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub btnTauro_Click(sender As Object, e As EventArgs) Handles btnTauro.Click
         TextBox1.Text = verSignoDia("tauro")
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub btnGeminis_Click(sender As Object, e As EventArgs) Handles btnGeminis.Click
         TextBox1.Text = verSignoDia("geminis")
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub btnCancer_Click(sender As Object, e As EventArgs) Handles btnCancer.Click
         TextBox1.Text = verSignoDia("cancer")
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub btnEscorpio_Click(sender As Object, e As EventArgs) Handles btnEscorpio.Click
         TextBox1.Text = verSignoDia("escorpio")
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub btnLibra_Click(sender As Object, e As EventArgs) Handles btnLibra.Click
         TextBox1.Text = verSignoDia("libra")
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub btnVirgo_Click(sender As Object, e As EventArgs) Handles btnVirgo.Click
         TextBox1.Text = verSignoDia("virgo")
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub btnLeo_Click(sender As Object, e As EventArgs) Handles btnLeo.Click
         TextBox1.Text = verSignoDia("leo")
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+    Private Sub btnSagitario_Click(sender As Object, e As EventArgs) Handles btnSagitario.Click
         TextBox1.Text = verSignoDia("sagitario")
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+    Private Sub btnCapricornio_Click(sender As Object, e As EventArgs) Handles btnCapricornio.Click
         TextBox1.Text = verSignoDia("capricornio")
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+    Private Sub btnAcuario_Click(sender As Object, e As EventArgs) Handles btnAcuario.Click
         TextBox1.Text = verSignoDia("acuario")
     End Sub
 
-    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+    Private Sub btnPiscis_Click(sender As Object, e As EventArgs) Handles btnPiscis.Click
         TextBox1.Text = verSignoDia("piscis")
     End Sub
 

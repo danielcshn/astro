@@ -24,18 +24,18 @@ Partial Class frmHoroscopo
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHoroscopo))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnPiscis = New System.Windows.Forms.Button()
+        Me.btnAcuario = New System.Windows.Forms.Button()
+        Me.btnCapricornio = New System.Windows.Forms.Button()
+        Me.btnSagitario = New System.Windows.Forms.Button()
+        Me.btnEscorpio = New System.Windows.Forms.Button()
+        Me.btnLibra = New System.Windows.Forms.Button()
+        Me.btnVirgo = New System.Windows.Forms.Button()
+        Me.btnLeo = New System.Windows.Forms.Button()
+        Me.btnCancer = New System.Windows.Forms.Button()
+        Me.btnGeminis = New System.Windows.Forms.Button()
+        Me.btnTauro = New System.Windows.Forms.Button()
+        Me.btnAries = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -46,18 +46,18 @@ Partial Class frmHoroscopo
         'Panel1
         '
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.Button14)
-        Me.Panel1.Controls.Add(Me.Button13)
-        Me.Panel1.Controls.Add(Me.Button12)
-        Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Controls.Add(Me.Button10)
-        Me.Panel1.Controls.Add(Me.Button9)
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
+        Me.Panel1.Controls.Add(Me.btnPiscis)
+        Me.Panel1.Controls.Add(Me.btnAcuario)
+        Me.Panel1.Controls.Add(Me.btnCapricornio)
+        Me.Panel1.Controls.Add(Me.btnSagitario)
+        Me.Panel1.Controls.Add(Me.btnEscorpio)
+        Me.Panel1.Controls.Add(Me.btnLibra)
+        Me.Panel1.Controls.Add(Me.btnVirgo)
+        Me.Panel1.Controls.Add(Me.btnLeo)
+        Me.Panel1.Controls.Add(Me.btnCancer)
+        Me.Panel1.Controls.Add(Me.btnGeminis)
+        Me.Panel1.Controls.Add(Me.btnTauro)
+        Me.Panel1.Controls.Add(Me.btnAries)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -65,187 +65,187 @@ Partial Class frmHoroscopo
         Me.Panel1.Size = New System.Drawing.Size(569, 553)
         Me.Panel1.TabIndex = 5
         '
-        'Button14
+        'btnPiscis
         '
-        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button14.Image = CType(resources.GetObject("Button14.Image"), System.Drawing.Image)
-        Me.Button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button14.Location = New System.Drawing.Point(424, 285)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(130, 130)
-        Me.Button14.TabIndex = 14
-        Me.Button14.Tag = ""
-        Me.Button14.Text = "PISCIS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "20/02 - 20/03"
-        Me.Button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button14.UseCompatibleTextRendering = True
-        Me.Button14.UseVisualStyleBackColor = True
+        Me.btnPiscis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnPiscis.Image = CType(resources.GetObject("btnPiscis.Image"), System.Drawing.Image)
+        Me.btnPiscis.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnPiscis.Location = New System.Drawing.Point(424, 285)
+        Me.btnPiscis.Name = "btnPiscis"
+        Me.btnPiscis.Size = New System.Drawing.Size(130, 130)
+        Me.btnPiscis.TabIndex = 14
+        Me.btnPiscis.Tag = ""
+        Me.btnPiscis.Text = "PISCIS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "20/02 - 20/03"
+        Me.btnPiscis.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnPiscis.UseCompatibleTextRendering = True
+        Me.btnPiscis.UseVisualStyleBackColor = True
         '
-        'Button13
+        'btnAcuario
         '
-        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button13.Image = CType(resources.GetObject("Button13.Image"), System.Drawing.Image)
-        Me.Button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button13.Location = New System.Drawing.Point(288, 285)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(130, 130)
-        Me.Button13.TabIndex = 13
-        Me.Button13.Tag = ""
-        Me.Button13.Text = "ACUARIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/01 - 19/02"
-        Me.Button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button13.UseCompatibleTextRendering = True
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.btnAcuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAcuario.Image = CType(resources.GetObject("btnAcuario.Image"), System.Drawing.Image)
+        Me.btnAcuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnAcuario.Location = New System.Drawing.Point(288, 285)
+        Me.btnAcuario.Name = "btnAcuario"
+        Me.btnAcuario.Size = New System.Drawing.Size(130, 130)
+        Me.btnAcuario.TabIndex = 13
+        Me.btnAcuario.Tag = ""
+        Me.btnAcuario.Text = "ACUARIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/01 - 19/02"
+        Me.btnAcuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAcuario.UseCompatibleTextRendering = True
+        Me.btnAcuario.UseVisualStyleBackColor = True
         '
-        'Button12
+        'btnCapricornio
         '
-        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
-        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button12.Location = New System.Drawing.Point(152, 285)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(130, 130)
-        Me.Button12.TabIndex = 12
-        Me.Button12.Tag = ""
-        Me.Button12.Text = "CAPRICORNIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "22/12 - 20/01"
-        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button12.UseCompatibleTextRendering = True
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btnCapricornio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCapricornio.Image = CType(resources.GetObject("btnCapricornio.Image"), System.Drawing.Image)
+        Me.btnCapricornio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnCapricornio.Location = New System.Drawing.Point(152, 285)
+        Me.btnCapricornio.Name = "btnCapricornio"
+        Me.btnCapricornio.Size = New System.Drawing.Size(130, 130)
+        Me.btnCapricornio.TabIndex = 12
+        Me.btnCapricornio.Tag = ""
+        Me.btnCapricornio.Text = "CAPRICORNIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "22/12 - 20/01"
+        Me.btnCapricornio.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCapricornio.UseCompatibleTextRendering = True
+        Me.btnCapricornio.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btnSagitario
         '
-        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
-        Me.Button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button11.Location = New System.Drawing.Point(16, 285)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(130, 130)
-        Me.Button11.TabIndex = 11
-        Me.Button11.Tag = ""
-        Me.Button11.Text = "SAGITARIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "22/11 - 21/12"
-        Me.Button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button11.UseCompatibleTextRendering = True
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btnSagitario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSagitario.Image = CType(resources.GetObject("btnSagitario.Image"), System.Drawing.Image)
+        Me.btnSagitario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnSagitario.Location = New System.Drawing.Point(16, 285)
+        Me.btnSagitario.Name = "btnSagitario"
+        Me.btnSagitario.Size = New System.Drawing.Size(130, 130)
+        Me.btnSagitario.TabIndex = 11
+        Me.btnSagitario.Tag = ""
+        Me.btnSagitario.Text = "SAGITARIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "22/11 - 21/12"
+        Me.btnSagitario.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnSagitario.UseCompatibleTextRendering = True
+        Me.btnSagitario.UseVisualStyleBackColor = True
         '
-        'Button10
+        'btnEscorpio
         '
-        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
-        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button10.Location = New System.Drawing.Point(424, 149)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(130, 130)
-        Me.Button10.TabIndex = 10
-        Me.Button10.Tag = ""
-        Me.Button10.Text = "ESCORPIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/10 - 21/11"
-        Me.Button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button10.UseCompatibleTextRendering = True
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.btnEscorpio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEscorpio.Image = CType(resources.GetObject("btnEscorpio.Image"), System.Drawing.Image)
+        Me.btnEscorpio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnEscorpio.Location = New System.Drawing.Point(424, 149)
+        Me.btnEscorpio.Name = "btnEscorpio"
+        Me.btnEscorpio.Size = New System.Drawing.Size(130, 130)
+        Me.btnEscorpio.TabIndex = 10
+        Me.btnEscorpio.Tag = ""
+        Me.btnEscorpio.Text = "ESCORPIO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/10 - 21/11"
+        Me.btnEscorpio.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnEscorpio.UseCompatibleTextRendering = True
+        Me.btnEscorpio.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btnLibra
         '
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.Location = New System.Drawing.Point(288, 149)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(130, 130)
-        Me.Button9.TabIndex = 9
-        Me.Button9.Tag = ""
-        Me.Button9.Text = "LIBRA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/09 - 22/10"
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button9.UseCompatibleTextRendering = True
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btnLibra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLibra.Image = CType(resources.GetObject("btnLibra.Image"), System.Drawing.Image)
+        Me.btnLibra.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnLibra.Location = New System.Drawing.Point(288, 149)
+        Me.btnLibra.Name = "btnLibra"
+        Me.btnLibra.Size = New System.Drawing.Size(130, 130)
+        Me.btnLibra.TabIndex = 9
+        Me.btnLibra.Tag = ""
+        Me.btnLibra.Text = "LIBRA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/09 - 22/10"
+        Me.btnLibra.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLibra.UseCompatibleTextRendering = True
+        Me.btnLibra.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnVirgo
         '
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button8.Location = New System.Drawing.Point(152, 149)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(130, 130)
-        Me.Button8.TabIndex = 8
-        Me.Button8.Tag = ""
-        Me.Button8.Text = "VIRGO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/08 - 22/09"
-        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button8.UseCompatibleTextRendering = True
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnVirgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnVirgo.Image = CType(resources.GetObject("btnVirgo.Image"), System.Drawing.Image)
+        Me.btnVirgo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnVirgo.Location = New System.Drawing.Point(152, 149)
+        Me.btnVirgo.Name = "btnVirgo"
+        Me.btnVirgo.Size = New System.Drawing.Size(130, 130)
+        Me.btnVirgo.TabIndex = 8
+        Me.btnVirgo.Tag = ""
+        Me.btnVirgo.Text = "VIRGO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/08 - 22/09"
+        Me.btnVirgo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnVirgo.UseCompatibleTextRendering = True
+        Me.btnVirgo.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnLeo
         '
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.Location = New System.Drawing.Point(16, 149)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(130, 130)
-        Me.Button7.TabIndex = 7
-        Me.Button7.Tag = ""
-        Me.Button7.Text = "LEO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/07 - 22/08"
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button7.UseCompatibleTextRendering = True
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnLeo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLeo.Image = CType(resources.GetObject("btnLeo.Image"), System.Drawing.Image)
+        Me.btnLeo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnLeo.Location = New System.Drawing.Point(16, 149)
+        Me.btnLeo.Name = "btnLeo"
+        Me.btnLeo.Size = New System.Drawing.Size(130, 130)
+        Me.btnLeo.TabIndex = 7
+        Me.btnLeo.Tag = ""
+        Me.btnLeo.Text = "LEO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "23/07 - 22/08"
+        Me.btnLeo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnLeo.UseCompatibleTextRendering = True
+        Me.btnLeo.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnCancer
         '
-        Me.Button6.AutoSize = True
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button6.Location = New System.Drawing.Point(424, 13)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(5)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(130, 130)
-        Me.Button6.TabIndex = 6
-        Me.Button6.Tag = ""
-        Me.Button6.Text = "CANCER" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/06 - 22/07"
-        Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button6.UseCompatibleTextRendering = True
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnCancer.AutoSize = True
+        Me.btnCancer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCancer.Image = CType(resources.GetObject("btnCancer.Image"), System.Drawing.Image)
+        Me.btnCancer.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnCancer.Location = New System.Drawing.Point(424, 13)
+        Me.btnCancer.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnCancer.Name = "btnCancer"
+        Me.btnCancer.Size = New System.Drawing.Size(130, 130)
+        Me.btnCancer.TabIndex = 6
+        Me.btnCancer.Tag = ""
+        Me.btnCancer.Text = "CANCER" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/06 - 22/07"
+        Me.btnCancer.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCancer.UseCompatibleTextRendering = True
+        Me.btnCancer.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnGeminis
         '
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.Location = New System.Drawing.Point(288, 13)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(130, 130)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Tag = ""
-        Me.Button5.Text = "GEMINIS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/05 - 20/06"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button5.UseCompatibleTextRendering = True
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnGeminis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnGeminis.Image = CType(resources.GetObject("btnGeminis.Image"), System.Drawing.Image)
+        Me.btnGeminis.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnGeminis.Location = New System.Drawing.Point(288, 13)
+        Me.btnGeminis.Name = "btnGeminis"
+        Me.btnGeminis.Size = New System.Drawing.Size(130, 130)
+        Me.btnGeminis.TabIndex = 5
+        Me.btnGeminis.Tag = ""
+        Me.btnGeminis.Text = "GEMINIS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/05 - 20/06"
+        Me.btnGeminis.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnGeminis.UseCompatibleTextRendering = True
+        Me.btnGeminis.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnTauro
         '
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(152, 13)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(130, 130)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Tag = ""
-        Me.Button4.Text = "TAURO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "20/04 - 20/05"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.UseCompatibleTextRendering = True
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnTauro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTauro.Image = CType(resources.GetObject("btnTauro.Image"), System.Drawing.Image)
+        Me.btnTauro.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnTauro.Location = New System.Drawing.Point(152, 13)
+        Me.btnTauro.Name = "btnTauro"
+        Me.btnTauro.Size = New System.Drawing.Size(130, 130)
+        Me.btnTauro.TabIndex = 4
+        Me.btnTauro.Tag = ""
+        Me.btnTauro.Text = "TAURO" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "20/04 - 20/05"
+        Me.btnTauro.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnTauro.UseCompatibleTextRendering = True
+        Me.btnTauro.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnAries
         '
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(16, 13)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 130)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Tag = ""
-        Me.Button3.Text = "ARIES" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/03 - 19/04"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseCompatibleTextRendering = True
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnAries.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAries.Image = CType(resources.GetObject("btnAries.Image"), System.Drawing.Image)
+        Me.btnAries.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnAries.Location = New System.Drawing.Point(16, 13)
+        Me.btnAries.Name = "btnAries"
+        Me.btnAries.Size = New System.Drawing.Size(130, 130)
+        Me.btnAries.TabIndex = 0
+        Me.btnAries.Tag = ""
+        Me.btnAries.Text = "ARIES" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "21/03 - 19/04"
+        Me.btnAries.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAries.UseCompatibleTextRendering = True
+        Me.btnAries.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -281,9 +281,11 @@ Partial Class frmHoroscopo
         Me.ClientSize = New System.Drawing.Size(569, 553)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmHoroscopo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmHoroscopo"
+        Me.Text = "Horóscopo y signos del zodíaco"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -293,18 +295,18 @@ Partial Class frmHoroscopo
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnPiscis As Button
+    Friend WithEvents btnAcuario As Button
+    Friend WithEvents btnCapricornio As Button
+    Friend WithEvents btnSagitario As Button
+    Friend WithEvents btnEscorpio As Button
+    Friend WithEvents btnLibra As Button
+    Friend WithEvents btnVirgo As Button
+    Friend WithEvents btnLeo As Button
+    Friend WithEvents btnCancer As Button
+    Friend WithEvents btnGeminis As Button
+    Friend WithEvents btnTauro As Button
+    Friend WithEvents btnAries As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
