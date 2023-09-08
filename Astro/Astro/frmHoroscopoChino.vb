@@ -1,4 +1,6 @@
-﻿Public Class frmHoroscopoChino
+﻿Imports HtmlAgilityPack
+
+Public Class frmHoroscopoChino
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         MsgBox(calcularSignoChino(txtAnno.Text))
     End Sub
@@ -40,5 +42,90 @@
         End If
 
         Return zodiac
+    End Function
+
+    Private Sub btnMono_Click(sender As Object, e As EventArgs) Handles btnMono.Click
+        TextBox1.Text = verSignoChino("mono")
+    End Sub
+
+    Private Sub btnRata_Click(sender As Object, e As EventArgs) Handles btnRata.Click
+        TextBox1.Text = verSignoChino("rata")
+    End Sub
+
+    Private Sub btnTigre_Click(sender As Object, e As EventArgs) Handles btnTigre.Click
+        TextBox1.Text = verSignoChino("tigre")
+    End Sub
+
+    Private Sub btnBuey_Click(sender As Object, e As EventArgs) Handles btnBuey.Click
+        TextBox1.Text = verSignoChino("buey")
+    End Sub
+
+    Private Sub btnConejo_Click(sender As Object, e As EventArgs) Handles btnConejo.Click
+        TextBox1.Text = verSignoChino("conejo")
+    End Sub
+
+    Private Sub btnDragon_Click(sender As Object, e As EventArgs) Handles btnDragon.Click
+        TextBox1.Text = verSignoChino("dragon")
+    End Sub
+
+    Private Sub btnCaballo_Click(sender As Object, e As EventArgs) Handles btnCaballo.Click
+        TextBox1.Text = verSignoChino("caballo")
+    End Sub
+
+    Private Sub btnSerpiente_Click(sender As Object, e As EventArgs) Handles btnSerpiente.Click
+        TextBox1.Text = verSignoChino("serpiente")
+    End Sub
+
+    Private Sub btnCabra_Click(sender As Object, e As EventArgs) Handles btnCabra.Click
+        TextBox1.Text = verSignoChino("cabra")
+    End Sub
+
+    Private Sub btnPerro_Click(sender As Object, e As EventArgs) Handles btnPerro.Click
+        TextBox1.Text = verSignoChino("perro")
+    End Sub
+
+    Private Sub btnGallo_Click(sender As Object, e As EventArgs) Handles btnGallo.Click
+        TextBox1.Text = verSignoChino("gallo")
+    End Sub
+
+    Private Sub btnCerdo_Click(sender As Object, e As EventArgs) Handles btnCerdo.Click
+        TextBox1.Text = verSignoChino("cerdo")
+    End Sub
+
+    Public Shared Function verSignoChino(ByVal signoactual As String) As String
+
+        ' Horoscopo Diario Fuente:
+        ' https://www.lavanguardia.com/horoscopo/horoscopo-chino/signo-mono
+
+        Dim url As String = "https://www.lavanguardia.com/horoscopo/horoscopo-chino/signo-" + signoactual
+        Dim resultado As String = ""
+
+        Dim web As New HtmlWeb()
+        Dim doc As HtmlDocument = web.Load(url)
+
+        Dim xpathExpression As String = "//*[@id='main']/div/section[1]/div/div/div"
+        Dim nodes As HtmlNodeCollection = doc.DocumentNode.SelectNodes(xpathExpression)
+
+        If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
+            For Each node As HtmlNode In nodes
+                Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
+                resultado = nodes(0).InnerHtml
+            Next
+        Else
+            Console.WriteLine("No matching nodes found.")
+        End If
+
+        If resultado.Length >= 4 Then
+            resultado = resultado.Substring(4)
+        Else
+            resultado = String.Empty
+        End If
+
+        resultado = resultado.Replace("            <p>", "") _
+        .Replace("         ", "") _
+        .Replace("</p>", "") _
+        .Replace("<p>", "")
+
+        Return resultado
     End Function
 End Class
