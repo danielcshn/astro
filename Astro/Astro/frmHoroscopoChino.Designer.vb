@@ -42,15 +42,17 @@ Partial Class frmHoroscopoChino
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.bgPanel = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.bgPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnRata
         '
         Me.btnRata.Image = CType(resources.GetObject("btnRata.Image"), System.Drawing.Image)
         Me.btnRata.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnRata.Location = New System.Drawing.Point(12, 111)
+        Me.btnRata.Location = New System.Drawing.Point(12, 109)
         Me.btnRata.Name = "btnRata"
         Me.btnRata.Size = New System.Drawing.Size(130, 130)
         Me.btnRata.TabIndex = 0
@@ -62,7 +64,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnTigre.Image = CType(resources.GetObject("btnTigre.Image"), System.Drawing.Image)
         Me.btnTigre.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnTigre.Location = New System.Drawing.Point(148, 111)
+        Me.btnTigre.Location = New System.Drawing.Point(148, 109)
         Me.btnTigre.Name = "btnTigre"
         Me.btnTigre.Size = New System.Drawing.Size(130, 130)
         Me.btnTigre.TabIndex = 1
@@ -74,7 +76,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnBuey.Image = CType(resources.GetObject("btnBuey.Image"), System.Drawing.Image)
         Me.btnBuey.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnBuey.Location = New System.Drawing.Point(284, 111)
+        Me.btnBuey.Location = New System.Drawing.Point(284, 109)
         Me.btnBuey.Name = "btnBuey"
         Me.btnBuey.Size = New System.Drawing.Size(130, 130)
         Me.btnBuey.TabIndex = 2
@@ -86,7 +88,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnConejo.Image = CType(resources.GetObject("btnConejo.Image"), System.Drawing.Image)
         Me.btnConejo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnConejo.Location = New System.Drawing.Point(420, 111)
+        Me.btnConejo.Location = New System.Drawing.Point(420, 109)
         Me.btnConejo.Name = "btnConejo"
         Me.btnConejo.Size = New System.Drawing.Size(130, 130)
         Me.btnConejo.TabIndex = 3
@@ -98,7 +100,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnDragon.Image = CType(resources.GetObject("btnDragon.Image"), System.Drawing.Image)
         Me.btnDragon.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnDragon.Location = New System.Drawing.Point(12, 247)
+        Me.btnDragon.Location = New System.Drawing.Point(12, 245)
         Me.btnDragon.Name = "btnDragon"
         Me.btnDragon.Size = New System.Drawing.Size(130, 130)
         Me.btnDragon.TabIndex = 4
@@ -110,7 +112,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnCaballo.Image = CType(resources.GetObject("btnCaballo.Image"), System.Drawing.Image)
         Me.btnCaballo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCaballo.Location = New System.Drawing.Point(148, 247)
+        Me.btnCaballo.Location = New System.Drawing.Point(148, 245)
         Me.btnCaballo.Name = "btnCaballo"
         Me.btnCaballo.Size = New System.Drawing.Size(130, 130)
         Me.btnCaballo.TabIndex = 5
@@ -122,7 +124,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnSerpiente.Image = CType(resources.GetObject("btnSerpiente.Image"), System.Drawing.Image)
         Me.btnSerpiente.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSerpiente.Location = New System.Drawing.Point(284, 247)
+        Me.btnSerpiente.Location = New System.Drawing.Point(284, 245)
         Me.btnSerpiente.Name = "btnSerpiente"
         Me.btnSerpiente.Size = New System.Drawing.Size(130, 130)
         Me.btnSerpiente.TabIndex = 6
@@ -134,7 +136,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnCabra.Image = CType(resources.GetObject("btnCabra.Image"), System.Drawing.Image)
         Me.btnCabra.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCabra.Location = New System.Drawing.Point(420, 247)
+        Me.btnCabra.Location = New System.Drawing.Point(420, 245)
         Me.btnCabra.Name = "btnCabra"
         Me.btnCabra.Size = New System.Drawing.Size(130, 130)
         Me.btnCabra.TabIndex = 7
@@ -146,7 +148,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnMono.Image = CType(resources.GetObject("btnMono.Image"), System.Drawing.Image)
         Me.btnMono.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnMono.Location = New System.Drawing.Point(12, 383)
+        Me.btnMono.Location = New System.Drawing.Point(12, 381)
         Me.btnMono.Name = "btnMono"
         Me.btnMono.Size = New System.Drawing.Size(130, 130)
         Me.btnMono.TabIndex = 8
@@ -158,7 +160,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnPerro.Image = CType(resources.GetObject("btnPerro.Image"), System.Drawing.Image)
         Me.btnPerro.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnPerro.Location = New System.Drawing.Point(148, 383)
+        Me.btnPerro.Location = New System.Drawing.Point(148, 381)
         Me.btnPerro.Name = "btnPerro"
         Me.btnPerro.Size = New System.Drawing.Size(130, 130)
         Me.btnPerro.TabIndex = 9
@@ -170,7 +172,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnGallo.Image = CType(resources.GetObject("btnGallo.Image"), System.Drawing.Image)
         Me.btnGallo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnGallo.Location = New System.Drawing.Point(284, 383)
+        Me.btnGallo.Location = New System.Drawing.Point(284, 381)
         Me.btnGallo.Name = "btnGallo"
         Me.btnGallo.Size = New System.Drawing.Size(130, 130)
         Me.btnGallo.TabIndex = 10
@@ -182,7 +184,7 @@ Partial Class frmHoroscopoChino
         '
         Me.btnCerdo.Image = CType(resources.GetObject("btnCerdo.Image"), System.Drawing.Image)
         Me.btnCerdo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCerdo.Location = New System.Drawing.Point(420, 383)
+        Me.btnCerdo.Location = New System.Drawing.Point(420, 381)
         Me.btnCerdo.Name = "btnCerdo"
         Me.btnCerdo.Size = New System.Drawing.Size(130, 130)
         Me.btnCerdo.TabIndex = 11
@@ -196,7 +198,7 @@ Partial Class frmHoroscopoChino
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.btnCalcular)
         Me.Panel1.Controls.Add(Me.txtAnno)
-        Me.Panel1.Location = New System.Drawing.Point(284, 12)
+        Me.Panel1.Location = New System.Drawing.Point(284, 10)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(266, 91)
         Me.Panel1.TabIndex = 12
@@ -232,7 +234,7 @@ Partial Class frmHoroscopoChino
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(12, 519)
+        Me.Panel2.Location = New System.Drawing.Point(12, 517)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(538, 117)
         Me.Panel2.TabIndex = 16
@@ -254,25 +256,34 @@ Partial Class frmHoroscopoChino
         Me.TextBox1.Size = New System.Drawing.Size(532, 93)
         Me.TextBox1.TabIndex = 1
         '
+        'bgPanel
+        '
+        Me.bgPanel.Controls.Add(Me.btnRata)
+        Me.bgPanel.Controls.Add(Me.Panel2)
+        Me.bgPanel.Controls.Add(Me.btnTigre)
+        Me.bgPanel.Controls.Add(Me.Panel1)
+        Me.bgPanel.Controls.Add(Me.btnBuey)
+        Me.bgPanel.Controls.Add(Me.btnCerdo)
+        Me.bgPanel.Controls.Add(Me.btnConejo)
+        Me.bgPanel.Controls.Add(Me.btnGallo)
+        Me.bgPanel.Controls.Add(Me.btnDragon)
+        Me.bgPanel.Controls.Add(Me.btnPerro)
+        Me.bgPanel.Controls.Add(Me.btnCaballo)
+        Me.bgPanel.Controls.Add(Me.btnMono)
+        Me.bgPanel.Controls.Add(Me.btnSerpiente)
+        Me.bgPanel.Controls.Add(Me.btnCabra)
+        Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.bgPanel.Location = New System.Drawing.Point(0, 0)
+        Me.bgPanel.Name = "bgPanel"
+        Me.bgPanel.Size = New System.Drawing.Size(564, 651)
+        Me.bgPanel.TabIndex = 17
+        '
         'frmHoroscopoChino
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(565, 651)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnCerdo)
-        Me.Controls.Add(Me.btnGallo)
-        Me.Controls.Add(Me.btnPerro)
-        Me.Controls.Add(Me.btnMono)
-        Me.Controls.Add(Me.btnCabra)
-        Me.Controls.Add(Me.btnSerpiente)
-        Me.Controls.Add(Me.btnCaballo)
-        Me.Controls.Add(Me.btnDragon)
-        Me.Controls.Add(Me.btnConejo)
-        Me.Controls.Add(Me.btnBuey)
-        Me.Controls.Add(Me.btnTigre)
-        Me.Controls.Add(Me.btnRata)
+        Me.ClientSize = New System.Drawing.Size(564, 651)
+        Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -283,6 +294,7 @@ Partial Class frmHoroscopoChino
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.bgPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -306,4 +318,5 @@ Partial Class frmHoroscopoChino
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents bgPanel As Panel
 End Class

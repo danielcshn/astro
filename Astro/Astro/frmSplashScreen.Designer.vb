@@ -13,11 +13,6 @@ Partial Class frmSplashScreen
             MyBase.Dispose(disposing)
         End Try
     End Sub
-    Friend WithEvents ApplicationTitle As System.Windows.Forms.Label
-    Friend WithEvents Version As System.Windows.Forms.Label
-    Friend WithEvents Copyright As System.Windows.Forms.Label
-    Friend WithEvents MainLayoutPanel As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents DetailsLayoutPanel As System.Windows.Forms.TableLayoutPanel
 
     'Requerido por el Diseñador de Windows Forms
     Private components As System.ComponentModel.IContainer
@@ -25,84 +20,62 @@ Partial Class frmSplashScreen
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSplashScreen))
-        Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.Version = New System.Windows.Forms.Label()
-        Me.Copyright = New System.Windows.Forms.Label()
-        Me.ApplicationTitle = New System.Windows.Forms.Label()
-        Me.MainLayoutPanel.SuspendLayout()
-        Me.DetailsLayoutPanel.SuspendLayout()
+        Me.bgPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.bgPanel.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'MainLayoutPanel
+        'bgPanel
         '
-        Me.MainLayoutPanel.BackgroundImage = CType(resources.GetObject("MainLayoutPanel.BackgroundImage"), System.Drawing.Image)
-        Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.MainLayoutPanel.ColumnCount = 2
-        Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
-        Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
-        Me.MainLayoutPanel.Controls.Add(Me.DetailsLayoutPanel, 1, 1)
-        Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 1, 0)
-        Me.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainLayoutPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MainLayoutPanel.Name = "MainLayoutPanel"
-        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 218.0!))
-        Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
-        Me.MainLayoutPanel.Size = New System.Drawing.Size(523, 298)
-        Me.MainLayoutPanel.TabIndex = 0
+        Me.bgPanel.Controls.Add(Me.PictureBox3)
+        Me.bgPanel.Controls.Add(Me.PictureBox2)
+        Me.bgPanel.Controls.Add(Me.PictureBox1)
+        Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.bgPanel.Location = New System.Drawing.Point(0, 0)
+        Me.bgPanel.Name = "bgPanel"
+        Me.bgPanel.Size = New System.Drawing.Size(523, 298)
+        Me.bgPanel.TabIndex = 1
         '
-        'DetailsLayoutPanel
+        'PictureBox1
         '
-        Me.DetailsLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.DetailsLayoutPanel.BackColor = System.Drawing.Color.Transparent
-        Me.DetailsLayoutPanel.ColumnCount = 1
-        Me.DetailsLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 247.0!))
-        Me.DetailsLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142.0!))
-        Me.DetailsLayoutPanel.Controls.Add(Me.Version, 0, 0)
-        Me.DetailsLayoutPanel.Controls.Add(Me.Copyright, 0, 1)
-        Me.DetailsLayoutPanel.Location = New System.Drawing.Point(259, 221)
-        Me.DetailsLayoutPanel.Name = "DetailsLayoutPanel"
-        Me.DetailsLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
-        Me.DetailsLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
-        Me.DetailsLayoutPanel.Size = New System.Drawing.Size(247, 74)
-        Me.DetailsLayoutPanel.TabIndex = 1
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(30, 40)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(220, 220)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
-        'Version
+        'PictureBox2
         '
-        Me.Version.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Version.BackColor = System.Drawing.Color.Transparent
-        Me.Version.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Version.Location = New System.Drawing.Point(3, 8)
-        Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(241, 20)
-        Me.Version.TabIndex = 1
-        Me.Version.Text = "Versión {0}.{1:00}"
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(278, 76)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(206, 90)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
         '
-        'Copyright
+        'PictureBox3
         '
-        Me.Copyright.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Copyright.BackColor = System.Drawing.Color.Transparent
-        Me.Copyright.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Copyright.Location = New System.Drawing.Point(3, 37)
-        Me.Copyright.Name = "Copyright"
-        Me.Copyright.Size = New System.Drawing.Size(241, 37)
-        Me.Copyright.TabIndex = 2
-        Me.Copyright.Text = "Copyright"
-        '
-        'ApplicationTitle
-        '
-        Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
-        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationTitle.Location = New System.Drawing.Point(246, 0)
-        Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(274, 218)
-        Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "Título de la aplicación"
-        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(291, 172)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(183, 49)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 2
+        Me.PictureBox3.TabStop = False
         '
         'frmSplashScreen
         '
@@ -110,17 +83,23 @@ Partial Class frmSplashScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(523, 298)
         Me.ControlBox = False
-        Me.Controls.Add(Me.MainLayoutPanel)
+        Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSplashScreen"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.MainLayoutPanel.ResumeLayout(False)
-        Me.DetailsLayoutPanel.ResumeLayout(False)
+        Me.bgPanel.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents bgPanel As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
 End Class

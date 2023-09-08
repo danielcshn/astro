@@ -23,7 +23,7 @@ Partial Class frmHoroscopo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHoroscopo))
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.bgPanel = New System.Windows.Forms.Panel()
         Me.btnPiscis = New System.Windows.Forms.Button()
         Me.btnAcuario = New System.Windows.Forms.Button()
         Me.btnCapricornio = New System.Windows.Forms.Button()
@@ -39,31 +39,31 @@ Partial Class frmHoroscopo
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel1.SuspendLayout()
+        Me.bgPanel.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'bgPanel
         '
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.btnPiscis)
-        Me.Panel1.Controls.Add(Me.btnAcuario)
-        Me.Panel1.Controls.Add(Me.btnCapricornio)
-        Me.Panel1.Controls.Add(Me.btnSagitario)
-        Me.Panel1.Controls.Add(Me.btnEscorpio)
-        Me.Panel1.Controls.Add(Me.btnLibra)
-        Me.Panel1.Controls.Add(Me.btnVirgo)
-        Me.Panel1.Controls.Add(Me.btnLeo)
-        Me.Panel1.Controls.Add(Me.btnCancer)
-        Me.Panel1.Controls.Add(Me.btnGeminis)
-        Me.Panel1.Controls.Add(Me.btnTauro)
-        Me.Panel1.Controls.Add(Me.btnAries)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(569, 553)
-        Me.Panel1.TabIndex = 5
+        Me.bgPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.bgPanel.Controls.Add(Me.btnPiscis)
+        Me.bgPanel.Controls.Add(Me.btnAcuario)
+        Me.bgPanel.Controls.Add(Me.btnCapricornio)
+        Me.bgPanel.Controls.Add(Me.btnSagitario)
+        Me.bgPanel.Controls.Add(Me.btnEscorpio)
+        Me.bgPanel.Controls.Add(Me.btnLibra)
+        Me.bgPanel.Controls.Add(Me.btnVirgo)
+        Me.bgPanel.Controls.Add(Me.btnLeo)
+        Me.bgPanel.Controls.Add(Me.btnCancer)
+        Me.bgPanel.Controls.Add(Me.btnGeminis)
+        Me.bgPanel.Controls.Add(Me.btnTauro)
+        Me.bgPanel.Controls.Add(Me.btnAries)
+        Me.bgPanel.Controls.Add(Me.Panel2)
+        Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.bgPanel.Location = New System.Drawing.Point(0, 0)
+        Me.bgPanel.Name = "bgPanel"
+        Me.bgPanel.Size = New System.Drawing.Size(569, 553)
+        Me.bgPanel.TabIndex = 5
         '
         'btnPiscis
         '
@@ -279,22 +279,22 @@ Partial Class frmHoroscopo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(569, 553)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmHoroscopo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Horóscopo y signos del zodíaco"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.bgPanel.ResumeLayout(False)
+        Me.bgPanel.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents bgPanel As Panel
     Friend WithEvents btnPiscis As Button
     Friend WithEvents btnAcuario As Button
     Friend WithEvents btnCapricornio As Button

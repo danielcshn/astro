@@ -1,4 +1,5 @@
-﻿Imports HtmlAgilityPack
+﻿Imports System.Drawing.Drawing2D
+Imports HtmlAgilityPack
 
 Public Class frmHoroscopoChino
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
@@ -128,4 +129,21 @@ Public Class frmHoroscopoChino
 
         Return resultado
     End Function
+
+    Private Sub txtAnno_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAnno.KeyPress
+        ' Verificar si la tecla presionada es un dígito numérico o una tecla de control
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            ' Si no es un dígito numérico ni una tecla de control, deshabilitar la entrada
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub bgPanel_Paint(sender As Object, e As PaintEventArgs) Handles bgPanel.Paint
+        ' Create a LinearGradientBrush for the gradient background.
+        Dim rect As New Rectangle(0, 0, bgPanel.Width, bgPanel.Height)
+        Dim gradientBrush As New LinearGradientBrush(rect, Color.HotPink, Color.Purple, LinearGradientMode.ForwardDiagonal)
+
+        ' Fill the PictureBox with the gradient background.
+        e.Graphics.FillRectangle(gradientBrush, rect)
+    End Sub
 End Class
