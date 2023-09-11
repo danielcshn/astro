@@ -62,22 +62,22 @@ Partial Class frmCompatibilidad
         '
         Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.White
-        Me.ImageList1.Images.SetKeyName(0, "ico-aries.png")
-        Me.ImageList1.Images.SetKeyName(1, "ico-tauro.png")
-        Me.ImageList1.Images.SetKeyName(2, "ico-geminis.png")
-        Me.ImageList1.Images.SetKeyName(3, "ico-cancer.png")
-        Me.ImageList1.Images.SetKeyName(4, "ico-leo.png")
-        Me.ImageList1.Images.SetKeyName(5, "ico-virgo.png")
-        Me.ImageList1.Images.SetKeyName(6, "ico-libra.png")
-        Me.ImageList1.Images.SetKeyName(7, "ico-escorpio.png")
-        Me.ImageList1.Images.SetKeyName(8, "ico-sagitario.png")
-        Me.ImageList1.Images.SetKeyName(9, "ico-capricornio.png")
-        Me.ImageList1.Images.SetKeyName(10, "ico-acuario.png")
-        Me.ImageList1.Images.SetKeyName(11, "ico-piscis.png")
+        Me.ImageList1.Images.SetKeyName(0, "cancer-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(1, "virgo-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(2, "escorpion-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(3, "geminis-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(4, "capricornio-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(5, "acuario-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(6, "leo-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(7, "aries-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(8, "tauro-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(9, "sagitario-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(10, "libra-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(11, "piscis-pro_256.png")
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Location = New System.Drawing.Point(58, 24)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
@@ -87,7 +87,7 @@ Partial Class frmCompatibilidad
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Location = New System.Drawing.Point(286, 24)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(150, 150)

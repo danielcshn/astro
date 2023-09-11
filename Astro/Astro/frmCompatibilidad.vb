@@ -33,51 +33,51 @@ Public Class frmCompatibilidad
     End Sub
 
     Private Sub lklAries_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklAries.LinkClicked
-        setSigno("ico-aries.png")
+        setSigno("aries-pro_256.png")
     End Sub
 
     Private Sub lklCancer_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklCancer.LinkClicked
-        setSigno("ico-cancer.png")
+        setSigno("cancer-pro_256.png")
     End Sub
 
     Private Sub lklTauro_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklTauro.LinkClicked
-        setSigno("ico-tauro.png")
+        setSigno("tauro-pro_256.png")
     End Sub
 
     Private Sub lklGeminis_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklGeminis.LinkClicked
-        setSigno("ico-geminis.png")
+        setSigno("geminis-pro_256.png")
     End Sub
 
     Private Sub lklLeo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklLeo.LinkClicked
-        setSigno("ico-leo.png")
+        setSigno("leo-pro_256.png")
     End Sub
 
     Private Sub lklVirgo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklVirgo.LinkClicked
-        setSigno("ico-virgo.png")
+        setSigno("virgo-pro_256.png")
     End Sub
 
     Private Sub lklLibra_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklLibra.LinkClicked
-        setSigno("ico-libra.png")
+        setSigno("libra-pro_256.png")
     End Sub
 
     Private Sub lklEscorpio_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklEscorpio.LinkClicked
-        setSigno("ico-escorpio.png")
+        setSigno("escorpion-pro_256.png")
     End Sub
 
     Private Sub lklSagitario_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklSagitario.LinkClicked
-        setSigno("ico-sagitario.png")
+        setSigno("sagitario-pro_256.png")
     End Sub
 
     Private Sub lklCapricornio_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklCapricornio.LinkClicked
-        setSigno("ico-capricornio.png")
+        setSigno("capricornio-pro_256.png")
     End Sub
 
     Private Sub lklAcuario_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklAcuario.LinkClicked
-        setSigno("ico-acuario.png")
+        setSigno("acuario-pro_256.png")
     End Sub
 
     Private Sub lklPiscis_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklPiscis.LinkClicked
-        setSigno("ico-piscis.png")
+        setSigno("piscis-pro_256.png")
     End Sub
 
     Private Sub btnVer_Click(sender As Object, e As EventArgs) Handles btnVer.Click
@@ -89,8 +89,8 @@ Public Class frmCompatibilidad
         ' Horoscopo Diario Fuente:
         ' https://www.lavanguardia.com/horoscopo/compatibilidad-signos-zodiaco/
 
-        spbox1 = spbox1.Replace("ico-", "").Replace(".png", "")
-        spbox2 = spbox2.Replace("ico-", "").Replace(".png", "")
+        spbox1 = spbox1.Replace("-pro_256", "").Replace(".png", "")
+        spbox2 = spbox2.Replace("-pro_256", "").Replace(".png", "")
 
         Dim url As String = "https://www.lavanguardia.com/horoscopo/compatibilidad-signos-zodiaco/" + spbox1 + "-" + spbox2
         Dim resultado As String = ""
