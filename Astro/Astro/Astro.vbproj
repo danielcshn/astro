@@ -160,6 +160,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fonts\Lato-Regular.ttf" />
+    <Content Include="Fonts\Lato-Black.ttf" />
+    <Content Include="Fonts\Lato-Bold.ttf" />
+    <Content Include="Fonts\Lato-Heavy.ttf" />
+    <Content Include="Fonts\Lato-Light.ttf" />
+    <Content Include="Fonts\Lato-Medium.ttf" />
+    <Content Include="Fonts\Lato-Thin.ttf" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -173,5 +180,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

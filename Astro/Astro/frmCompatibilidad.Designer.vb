@@ -98,7 +98,9 @@ Partial Class frmCompatibilidad
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(229, 79)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 39)
@@ -108,11 +110,11 @@ Partial Class frmCompatibilidad
         'lklAries
         '
         Me.lklAries.AutoSize = True
-        Me.lklAries.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklAries.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklAries.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.lklAries.Location = New System.Drawing.Point(18, 19)
         Me.lklAries.Name = "lklAries"
-        Me.lklAries.Size = New System.Drawing.Size(59, 20)
+        Me.lklAries.Size = New System.Drawing.Size(52, 19)
         Me.lklAries.TabIndex = 3
         Me.lklAries.TabStop = True
         Me.lklAries.Text = "ARIES"
@@ -120,11 +122,11 @@ Partial Class frmCompatibilidad
         'lklTauro
         '
         Me.lklTauro.AutoSize = True
-        Me.lklTauro.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklTauro.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklTauro.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklTauro.Location = New System.Drawing.Point(103, 19)
+        Me.lklTauro.Location = New System.Drawing.Point(95, 19)
         Me.lklTauro.Name = "lklTauro"
-        Me.lklTauro.Size = New System.Drawing.Size(65, 20)
+        Me.lklTauro.Size = New System.Drawing.Size(63, 19)
         Me.lklTauro.TabIndex = 4
         Me.lklTauro.TabStop = True
         Me.lklTauro.Text = "TAURO"
@@ -132,11 +134,11 @@ Partial Class frmCompatibilidad
         'lklGeminis
         '
         Me.lklGeminis.AutoSize = True
-        Me.lklGeminis.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklGeminis.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklGeminis.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklGeminis.Location = New System.Drawing.Point(194, 19)
+        Me.lklGeminis.Location = New System.Drawing.Point(183, 19)
         Me.lklGeminis.Name = "lklGeminis"
-        Me.lklGeminis.Size = New System.Drawing.Size(78, 20)
+        Me.lklGeminis.Size = New System.Drawing.Size(74, 19)
         Me.lklGeminis.TabIndex = 5
         Me.lklGeminis.TabStop = True
         Me.lklGeminis.Text = "GÉMINIS"
@@ -144,11 +146,11 @@ Partial Class frmCompatibilidad
         'lklCancer
         '
         Me.lklCancer.AutoSize = True
-        Me.lklCancer.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklCancer.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklCancer.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklCancer.Location = New System.Drawing.Point(298, 19)
+        Me.lklCancer.Location = New System.Drawing.Point(282, 19)
         Me.lklCancer.Name = "lklCancer"
-        Me.lklCancer.Size = New System.Drawing.Size(76, 20)
+        Me.lklCancer.Size = New System.Drawing.Size(73, 19)
         Me.lklCancer.TabIndex = 6
         Me.lklCancer.TabStop = True
         Me.lklCancer.Text = "CÁNCER"
@@ -156,11 +158,11 @@ Partial Class frmCompatibilidad
         'lklLeo
         '
         Me.lklLeo.AutoSize = True
-        Me.lklLeo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklLeo.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklLeo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklLeo.Location = New System.Drawing.Point(400, 19)
+        Me.lklLeo.Location = New System.Drawing.Point(380, 19)
         Me.lklLeo.Name = "lklLeo"
-        Me.lklLeo.Size = New System.Drawing.Size(41, 20)
+        Me.lklLeo.Size = New System.Drawing.Size(39, 19)
         Me.lklLeo.TabIndex = 7
         Me.lklLeo.TabStop = True
         Me.lklLeo.Text = "LEO"
@@ -168,11 +170,11 @@ Partial Class frmCompatibilidad
         'lklVirgo
         '
         Me.lklVirgo.AutoSize = True
-        Me.lklVirgo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklVirgo.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklVirgo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklVirgo.Location = New System.Drawing.Point(35, 51)
+        Me.lklVirgo.Location = New System.Drawing.Point(38, 51)
         Me.lklVirgo.Name = "lklVirgo"
-        Me.lklVirgo.Size = New System.Drawing.Size(62, 20)
+        Me.lklVirgo.Size = New System.Drawing.Size(59, 19)
         Me.lklVirgo.TabIndex = 8
         Me.lklVirgo.TabStop = True
         Me.lklVirgo.Text = "VIRGO"
@@ -180,11 +182,11 @@ Partial Class frmCompatibilidad
         'lklLibra
         '
         Me.lklLibra.AutoSize = True
-        Me.lklLibra.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklLibra.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklLibra.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklLibra.Location = New System.Drawing.Point(123, 51)
+        Me.lklLibra.Location = New System.Drawing.Point(122, 51)
         Me.lklLibra.Name = "lklLibra"
-        Me.lklLibra.Size = New System.Drawing.Size(57, 20)
+        Me.lklLibra.Size = New System.Drawing.Size(52, 19)
         Me.lklLibra.TabIndex = 9
         Me.lklLibra.TabStop = True
         Me.lklLibra.Text = "LIBRA"
@@ -192,11 +194,11 @@ Partial Class frmCompatibilidad
         'lklEscorpio
         '
         Me.lklEscorpio.AutoSize = True
-        Me.lklEscorpio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklEscorpio.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklEscorpio.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklEscorpio.Location = New System.Drawing.Point(206, 51)
+        Me.lklEscorpio.Location = New System.Drawing.Point(199, 51)
         Me.lklEscorpio.Name = "lklEscorpio"
-        Me.lklEscorpio.Size = New System.Drawing.Size(93, 20)
+        Me.lklEscorpio.Size = New System.Drawing.Size(88, 19)
         Me.lklEscorpio.TabIndex = 10
         Me.lklEscorpio.TabStop = True
         Me.lklEscorpio.Text = "ESCORPIO"
@@ -204,11 +206,11 @@ Partial Class frmCompatibilidad
         'lklSagitario
         '
         Me.lklSagitario.AutoSize = True
-        Me.lklSagitario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklSagitario.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklSagitario.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklSagitario.Location = New System.Drawing.Point(325, 51)
+        Me.lklSagitario.Location = New System.Drawing.Point(312, 51)
         Me.lklSagitario.Name = "lklSagitario"
-        Me.lklSagitario.Size = New System.Drawing.Size(98, 20)
+        Me.lklSagitario.Size = New System.Drawing.Size(91, 19)
         Me.lklSagitario.TabIndex = 11
         Me.lklSagitario.TabStop = True
         Me.lklSagitario.Text = "SAGITARIO"
@@ -216,11 +218,11 @@ Partial Class frmCompatibilidad
         'lklCapricornio
         '
         Me.lklCapricornio.AutoSize = True
-        Me.lklCapricornio.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklCapricornio.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklCapricornio.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.lklCapricornio.Location = New System.Drawing.Point(67, 84)
         Me.lklCapricornio.Name = "lklCapricornio"
-        Me.lklCapricornio.Size = New System.Drawing.Size(121, 20)
+        Me.lklCapricornio.Size = New System.Drawing.Size(118, 19)
         Me.lklCapricornio.TabIndex = 12
         Me.lklCapricornio.TabStop = True
         Me.lklCapricornio.Text = "CAPRICORNIO"
@@ -228,11 +230,11 @@ Partial Class frmCompatibilidad
         'lklAcuario
         '
         Me.lklAcuario.AutoSize = True
-        Me.lklAcuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklAcuario.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklAcuario.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklAcuario.Location = New System.Drawing.Point(214, 84)
+        Me.lklAcuario.Location = New System.Drawing.Point(210, 84)
         Me.lklAcuario.Name = "lklAcuario"
-        Me.lklAcuario.Size = New System.Drawing.Size(83, 20)
+        Me.lklAcuario.Size = New System.Drawing.Size(81, 19)
         Me.lklAcuario.TabIndex = 13
         Me.lklAcuario.TabStop = True
         Me.lklAcuario.Text = "ACUARIO"
@@ -240,11 +242,11 @@ Partial Class frmCompatibilidad
         'lklPiscis
         '
         Me.lklPiscis.AutoSize = True
-        Me.lklPiscis.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklPiscis.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklPiscis.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklPiscis.Location = New System.Drawing.Point(323, 84)
+        Me.lklPiscis.Location = New System.Drawing.Point(316, 84)
         Me.lklPiscis.Name = "lklPiscis"
-        Me.lklPiscis.Size = New System.Drawing.Size(62, 20)
+        Me.lklPiscis.Size = New System.Drawing.Size(56, 19)
         Me.lklPiscis.TabIndex = 14
         Me.lklPiscis.TabStop = True
         Me.lklPiscis.Text = "PISCIS"
@@ -252,90 +254,90 @@ Partial Class frmCompatibilidad
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(83, 19)
+        Me.Label2.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(76, 19)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(14, 20)
+        Me.Label2.Size = New System.Drawing.Size(13, 19)
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "|"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(174, 19)
+        Me.Label3.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(164, 19)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(14, 20)
+        Me.Label3.Size = New System.Drawing.Size(13, 19)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "|"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(278, 19)
+        Me.Label4.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(263, 19)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(14, 20)
+        Me.Label4.Size = New System.Drawing.Size(13, 19)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "|"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(380, 19)
+        Me.Label5.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(361, 19)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(14, 20)
+        Me.Label5.Size = New System.Drawing.Size(13, 19)
         Me.Label5.TabIndex = 18
         Me.Label5.Text = "|"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(103, 51)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(14, 20)
+        Me.Label6.Size = New System.Drawing.Size(13, 19)
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "|"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(186, 51)
+        Me.Label7.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(180, 51)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(14, 20)
+        Me.Label7.Size = New System.Drawing.Size(13, 19)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "|"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(305, 51)
+        Me.Label8.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(293, 51)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(14, 20)
+        Me.Label8.Size = New System.Drawing.Size(13, 19)
         Me.Label8.TabIndex = 21
         Me.Label8.Text = "|"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(194, 84)
+        Me.Label9.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(191, 84)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(14, 20)
+        Me.Label9.Size = New System.Drawing.Size(13, 19)
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "|"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(303, 84)
+        Me.Label10.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(297, 84)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(14, 20)
+        Me.Label10.Size = New System.Drawing.Size(13, 19)
         Me.Label10.TabIndex = 23
         Me.Label10.Text = "|"
         '
@@ -402,6 +404,7 @@ Partial Class frmCompatibilidad
         Me.Name = "frmCompatibilidad"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Compatibilidad entre signos"
+        Me.TopMost = True
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)

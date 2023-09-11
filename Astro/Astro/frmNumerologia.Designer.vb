@@ -190,6 +190,7 @@ Partial Class frmNumerologia
         Me.Name = "frmNumerologia"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Numerología de la semana"
+        Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

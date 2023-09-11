@@ -286,6 +286,7 @@ Partial Class frmHoroscopo
         Me.Name = "frmHoroscopo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Horóscopo y signos del zodíaco"
+        Me.TopMost = True
         Me.bgPanel.ResumeLayout(False)
         Me.bgPanel.PerformLayout()
         Me.Panel2.ResumeLayout(False)

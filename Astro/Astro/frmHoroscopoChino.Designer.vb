@@ -290,6 +290,7 @@ Partial Class frmHoroscopoChino
         Me.Name = "frmHoroscopoChino"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "El Horóscopo chino"
+        Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
