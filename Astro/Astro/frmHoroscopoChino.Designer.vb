@@ -50,6 +50,8 @@ Partial Class frmHoroscopoChino
         '
         'btnRata
         '
+        Me.btnRata.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRata.ForeColor = System.Drawing.Color.Black
         Me.btnRata.Image = CType(resources.GetObject("btnRata.Image"), System.Drawing.Image)
         Me.btnRata.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnRata.Location = New System.Drawing.Point(12, 109)
@@ -62,6 +64,8 @@ Partial Class frmHoroscopoChino
         '
         'btnTigre
         '
+        Me.btnTigre.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTigre.ForeColor = System.Drawing.Color.Black
         Me.btnTigre.Image = CType(resources.GetObject("btnTigre.Image"), System.Drawing.Image)
         Me.btnTigre.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnTigre.Location = New System.Drawing.Point(148, 109)
@@ -74,6 +78,8 @@ Partial Class frmHoroscopoChino
         '
         'btnBuey
         '
+        Me.btnBuey.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuey.ForeColor = System.Drawing.Color.Black
         Me.btnBuey.Image = CType(resources.GetObject("btnBuey.Image"), System.Drawing.Image)
         Me.btnBuey.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnBuey.Location = New System.Drawing.Point(284, 109)
@@ -86,6 +92,8 @@ Partial Class frmHoroscopoChino
         '
         'btnConejo
         '
+        Me.btnConejo.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConejo.ForeColor = System.Drawing.Color.Black
         Me.btnConejo.Image = CType(resources.GetObject("btnConejo.Image"), System.Drawing.Image)
         Me.btnConejo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnConejo.Location = New System.Drawing.Point(420, 109)
@@ -98,6 +106,8 @@ Partial Class frmHoroscopoChino
         '
         'btnDragon
         '
+        Me.btnDragon.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDragon.ForeColor = System.Drawing.Color.Black
         Me.btnDragon.Image = CType(resources.GetObject("btnDragon.Image"), System.Drawing.Image)
         Me.btnDragon.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnDragon.Location = New System.Drawing.Point(12, 245)
@@ -110,6 +120,8 @@ Partial Class frmHoroscopoChino
         '
         'btnCaballo
         '
+        Me.btnCaballo.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCaballo.ForeColor = System.Drawing.Color.Black
         Me.btnCaballo.Image = CType(resources.GetObject("btnCaballo.Image"), System.Drawing.Image)
         Me.btnCaballo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCaballo.Location = New System.Drawing.Point(148, 245)
@@ -122,6 +134,8 @@ Partial Class frmHoroscopoChino
         '
         'btnSerpiente
         '
+        Me.btnSerpiente.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSerpiente.ForeColor = System.Drawing.Color.Black
         Me.btnSerpiente.Image = CType(resources.GetObject("btnSerpiente.Image"), System.Drawing.Image)
         Me.btnSerpiente.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnSerpiente.Location = New System.Drawing.Point(284, 245)
@@ -134,6 +148,8 @@ Partial Class frmHoroscopoChino
         '
         'btnCabra
         '
+        Me.btnCabra.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCabra.ForeColor = System.Drawing.Color.Black
         Me.btnCabra.Image = CType(resources.GetObject("btnCabra.Image"), System.Drawing.Image)
         Me.btnCabra.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCabra.Location = New System.Drawing.Point(420, 245)
@@ -146,6 +162,8 @@ Partial Class frmHoroscopoChino
         '
         'btnMono
         '
+        Me.btnMono.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMono.ForeColor = System.Drawing.Color.Black
         Me.btnMono.Image = CType(resources.GetObject("btnMono.Image"), System.Drawing.Image)
         Me.btnMono.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnMono.Location = New System.Drawing.Point(12, 381)
@@ -158,6 +176,8 @@ Partial Class frmHoroscopoChino
         '
         'btnPerro
         '
+        Me.btnPerro.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPerro.ForeColor = System.Drawing.Color.Black
         Me.btnPerro.Image = CType(resources.GetObject("btnPerro.Image"), System.Drawing.Image)
         Me.btnPerro.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnPerro.Location = New System.Drawing.Point(148, 381)
@@ -170,6 +190,8 @@ Partial Class frmHoroscopoChino
         '
         'btnGallo
         '
+        Me.btnGallo.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGallo.ForeColor = System.Drawing.Color.Black
         Me.btnGallo.Image = CType(resources.GetObject("btnGallo.Image"), System.Drawing.Image)
         Me.btnGallo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnGallo.Location = New System.Drawing.Point(284, 381)
@@ -182,6 +204,8 @@ Partial Class frmHoroscopoChino
         '
         'btnCerdo
         '
+        Me.btnCerdo.Font = New System.Drawing.Font("Lato Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCerdo.ForeColor = System.Drawing.Color.Black
         Me.btnCerdo.Image = CType(resources.GetObject("btnCerdo.Image"), System.Drawing.Image)
         Me.btnCerdo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCerdo.Location = New System.Drawing.Point(420, 381)

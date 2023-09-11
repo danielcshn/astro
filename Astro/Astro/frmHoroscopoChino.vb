@@ -2,6 +2,11 @@
 Imports System.Text.RegularExpressions
 Imports HtmlAgilityPack
 
+' ICONOS:
+' Pack de iconos: Chinese zodiac flat 1 of 1 | Flat - https://www.flaticon.es/
+' Licencia de Flaticon - Gratis para uso personal o comercial con atribución.
+' Autor: https://www.flaticon.es/autores/freepik
+
 Public Class frmHoroscopoChino
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
 

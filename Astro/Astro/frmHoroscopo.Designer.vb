@@ -68,6 +68,8 @@ Partial Class frmHoroscopo
         'btnPiscis
         '
         Me.btnPiscis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnPiscis.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPiscis.ForeColor = System.Drawing.Color.Black
         Me.btnPiscis.Image = CType(resources.GetObject("btnPiscis.Image"), System.Drawing.Image)
         Me.btnPiscis.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnPiscis.Location = New System.Drawing.Point(424, 285)
@@ -83,6 +85,8 @@ Partial Class frmHoroscopo
         'btnAcuario
         '
         Me.btnAcuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAcuario.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAcuario.ForeColor = System.Drawing.Color.Black
         Me.btnAcuario.Image = CType(resources.GetObject("btnAcuario.Image"), System.Drawing.Image)
         Me.btnAcuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnAcuario.Location = New System.Drawing.Point(288, 285)
@@ -98,6 +102,8 @@ Partial Class frmHoroscopo
         'btnCapricornio
         '
         Me.btnCapricornio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCapricornio.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCapricornio.ForeColor = System.Drawing.Color.Black
         Me.btnCapricornio.Image = CType(resources.GetObject("btnCapricornio.Image"), System.Drawing.Image)
         Me.btnCapricornio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCapricornio.Location = New System.Drawing.Point(152, 285)
@@ -113,6 +119,8 @@ Partial Class frmHoroscopo
         'btnSagitario
         '
         Me.btnSagitario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSagitario.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSagitario.ForeColor = System.Drawing.Color.Black
         Me.btnSagitario.Image = CType(resources.GetObject("btnSagitario.Image"), System.Drawing.Image)
         Me.btnSagitario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnSagitario.Location = New System.Drawing.Point(16, 285)
@@ -128,6 +136,8 @@ Partial Class frmHoroscopo
         'btnEscorpio
         '
         Me.btnEscorpio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEscorpio.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEscorpio.ForeColor = System.Drawing.Color.Black
         Me.btnEscorpio.Image = CType(resources.GetObject("btnEscorpio.Image"), System.Drawing.Image)
         Me.btnEscorpio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnEscorpio.Location = New System.Drawing.Point(424, 149)
@@ -143,6 +153,8 @@ Partial Class frmHoroscopo
         'btnLibra
         '
         Me.btnLibra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLibra.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLibra.ForeColor = System.Drawing.Color.Black
         Me.btnLibra.Image = CType(resources.GetObject("btnLibra.Image"), System.Drawing.Image)
         Me.btnLibra.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnLibra.Location = New System.Drawing.Point(288, 149)
@@ -158,6 +170,8 @@ Partial Class frmHoroscopo
         'btnVirgo
         '
         Me.btnVirgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnVirgo.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVirgo.ForeColor = System.Drawing.Color.Black
         Me.btnVirgo.Image = CType(resources.GetObject("btnVirgo.Image"), System.Drawing.Image)
         Me.btnVirgo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnVirgo.Location = New System.Drawing.Point(152, 149)
@@ -173,6 +187,8 @@ Partial Class frmHoroscopo
         'btnLeo
         '
         Me.btnLeo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLeo.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLeo.ForeColor = System.Drawing.Color.Black
         Me.btnLeo.Image = CType(resources.GetObject("btnLeo.Image"), System.Drawing.Image)
         Me.btnLeo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnLeo.Location = New System.Drawing.Point(16, 149)
@@ -189,6 +205,8 @@ Partial Class frmHoroscopo
         '
         Me.btnCancer.AutoSize = True
         Me.btnCancer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnCancer.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancer.ForeColor = System.Drawing.Color.Black
         Me.btnCancer.Image = CType(resources.GetObject("btnCancer.Image"), System.Drawing.Image)
         Me.btnCancer.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnCancer.Location = New System.Drawing.Point(424, 13)
@@ -205,6 +223,8 @@ Partial Class frmHoroscopo
         'btnGeminis
         '
         Me.btnGeminis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnGeminis.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGeminis.ForeColor = System.Drawing.Color.Black
         Me.btnGeminis.Image = CType(resources.GetObject("btnGeminis.Image"), System.Drawing.Image)
         Me.btnGeminis.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnGeminis.Location = New System.Drawing.Point(288, 13)
@@ -220,6 +240,8 @@ Partial Class frmHoroscopo
         'btnTauro
         '
         Me.btnTauro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTauro.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTauro.ForeColor = System.Drawing.Color.Black
         Me.btnTauro.Image = CType(resources.GetObject("btnTauro.Image"), System.Drawing.Image)
         Me.btnTauro.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnTauro.Location = New System.Drawing.Point(152, 13)
@@ -235,6 +257,8 @@ Partial Class frmHoroscopo
         'btnAries
         '
         Me.btnAries.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAries.Font = New System.Drawing.Font("Lato Thin", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAries.ForeColor = System.Drawing.Color.Black
         Me.btnAries.Image = CType(resources.GetObject("btnAries.Image"), System.Drawing.Image)
         Me.btnAries.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnAries.Location = New System.Drawing.Point(16, 13)

@@ -1,6 +1,11 @@
 ﻿Imports System.Drawing.Drawing2D
 Imports HtmlAgilityPack
 
+' ICONOS:
+' Pack de iconos: Horoscope | Flat - https://www.flaticon.es/
+' Licencia de Flaticon - Gratis para uso personal o comercial con atribución.
+' Autor: https://www.flaticon.es/autores/freepik
+
 Public Class frmHoroscopo
     Private Sub btnAries_Click(sender As Object, e As EventArgs) Handles btnAries.Click
         TextBox1.Text = verSignoDia("aries")
