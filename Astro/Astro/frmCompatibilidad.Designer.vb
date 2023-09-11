@@ -52,10 +52,13 @@ Partial Class frmCompatibilidad
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnVer = New System.Windows.Forms.Button()
         Me.bgPanel = New System.Windows.Forms.Panel()
+        Me.pbComp = New System.Windows.Forms.PictureBox()
+        Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.bgPanel.SuspendLayout()
+        CType(Me.pbComp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -78,7 +81,7 @@ Partial Class frmCompatibilidad
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Location = New System.Drawing.Point(58, 24)
+        Me.PictureBox1.Location = New System.Drawing.Point(39, 15)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(150, 150)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -88,7 +91,7 @@ Partial Class frmCompatibilidad
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Location = New System.Drawing.Point(286, 24)
+        Me.PictureBox2.Location = New System.Drawing.Point(267, 15)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(150, 150)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -101,7 +104,7 @@ Partial Class frmCompatibilidad
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(229, 79)
+        Me.Label1.Location = New System.Drawing.Point(210, 80)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(37, 39)
         Me.Label1.TabIndex = 2
@@ -112,7 +115,7 @@ Partial Class frmCompatibilidad
         Me.lklAries.AutoSize = True
         Me.lklAries.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklAries.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklAries.Location = New System.Drawing.Point(18, 19)
+        Me.lklAries.Location = New System.Drawing.Point(15, 14)
         Me.lklAries.Name = "lklAries"
         Me.lklAries.Size = New System.Drawing.Size(52, 19)
         Me.lklAries.TabIndex = 3
@@ -124,7 +127,7 @@ Partial Class frmCompatibilidad
         Me.lklTauro.AutoSize = True
         Me.lklTauro.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklTauro.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklTauro.Location = New System.Drawing.Point(95, 19)
+        Me.lklTauro.Location = New System.Drawing.Point(92, 14)
         Me.lklTauro.Name = "lklTauro"
         Me.lklTauro.Size = New System.Drawing.Size(63, 19)
         Me.lklTauro.TabIndex = 4
@@ -136,7 +139,7 @@ Partial Class frmCompatibilidad
         Me.lklGeminis.AutoSize = True
         Me.lklGeminis.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklGeminis.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklGeminis.Location = New System.Drawing.Point(183, 19)
+        Me.lklGeminis.Location = New System.Drawing.Point(180, 14)
         Me.lklGeminis.Name = "lklGeminis"
         Me.lklGeminis.Size = New System.Drawing.Size(74, 19)
         Me.lklGeminis.TabIndex = 5
@@ -148,7 +151,7 @@ Partial Class frmCompatibilidad
         Me.lklCancer.AutoSize = True
         Me.lklCancer.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklCancer.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklCancer.Location = New System.Drawing.Point(282, 19)
+        Me.lklCancer.Location = New System.Drawing.Point(279, 14)
         Me.lklCancer.Name = "lklCancer"
         Me.lklCancer.Size = New System.Drawing.Size(73, 19)
         Me.lklCancer.TabIndex = 6
@@ -160,7 +163,7 @@ Partial Class frmCompatibilidad
         Me.lklLeo.AutoSize = True
         Me.lklLeo.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklLeo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklLeo.Location = New System.Drawing.Point(380, 19)
+        Me.lklLeo.Location = New System.Drawing.Point(377, 14)
         Me.lklLeo.Name = "lklLeo"
         Me.lklLeo.Size = New System.Drawing.Size(39, 19)
         Me.lklLeo.TabIndex = 7
@@ -172,7 +175,7 @@ Partial Class frmCompatibilidad
         Me.lklVirgo.AutoSize = True
         Me.lklVirgo.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklVirgo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklVirgo.Location = New System.Drawing.Point(38, 51)
+        Me.lklVirgo.Location = New System.Drawing.Point(35, 46)
         Me.lklVirgo.Name = "lklVirgo"
         Me.lklVirgo.Size = New System.Drawing.Size(59, 19)
         Me.lklVirgo.TabIndex = 8
@@ -184,7 +187,7 @@ Partial Class frmCompatibilidad
         Me.lklLibra.AutoSize = True
         Me.lklLibra.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklLibra.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklLibra.Location = New System.Drawing.Point(122, 51)
+        Me.lklLibra.Location = New System.Drawing.Point(119, 46)
         Me.lklLibra.Name = "lklLibra"
         Me.lklLibra.Size = New System.Drawing.Size(52, 19)
         Me.lklLibra.TabIndex = 9
@@ -196,7 +199,7 @@ Partial Class frmCompatibilidad
         Me.lklEscorpio.AutoSize = True
         Me.lklEscorpio.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklEscorpio.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklEscorpio.Location = New System.Drawing.Point(199, 51)
+        Me.lklEscorpio.Location = New System.Drawing.Point(196, 46)
         Me.lklEscorpio.Name = "lklEscorpio"
         Me.lklEscorpio.Size = New System.Drawing.Size(88, 19)
         Me.lklEscorpio.TabIndex = 10
@@ -208,7 +211,7 @@ Partial Class frmCompatibilidad
         Me.lklSagitario.AutoSize = True
         Me.lklSagitario.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklSagitario.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklSagitario.Location = New System.Drawing.Point(312, 51)
+        Me.lklSagitario.Location = New System.Drawing.Point(309, 46)
         Me.lklSagitario.Name = "lklSagitario"
         Me.lklSagitario.Size = New System.Drawing.Size(91, 19)
         Me.lklSagitario.TabIndex = 11
@@ -220,7 +223,7 @@ Partial Class frmCompatibilidad
         Me.lklCapricornio.AutoSize = True
         Me.lklCapricornio.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklCapricornio.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklCapricornio.Location = New System.Drawing.Point(67, 84)
+        Me.lklCapricornio.Location = New System.Drawing.Point(64, 79)
         Me.lklCapricornio.Name = "lklCapricornio"
         Me.lklCapricornio.Size = New System.Drawing.Size(118, 19)
         Me.lklCapricornio.TabIndex = 12
@@ -232,7 +235,7 @@ Partial Class frmCompatibilidad
         Me.lklAcuario.AutoSize = True
         Me.lklAcuario.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklAcuario.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklAcuario.Location = New System.Drawing.Point(210, 84)
+        Me.lklAcuario.Location = New System.Drawing.Point(207, 79)
         Me.lklAcuario.Name = "lklAcuario"
         Me.lklAcuario.Size = New System.Drawing.Size(81, 19)
         Me.lklAcuario.TabIndex = 13
@@ -244,7 +247,7 @@ Partial Class frmCompatibilidad
         Me.lklPiscis.AutoSize = True
         Me.lklPiscis.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lklPiscis.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklPiscis.Location = New System.Drawing.Point(316, 84)
+        Me.lklPiscis.Location = New System.Drawing.Point(313, 79)
         Me.lklPiscis.Name = "lklPiscis"
         Me.lklPiscis.Size = New System.Drawing.Size(56, 19)
         Me.lklPiscis.TabIndex = 14
@@ -255,7 +258,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(76, 19)
+        Me.Label2.Location = New System.Drawing.Point(73, 14)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(13, 19)
         Me.Label2.TabIndex = 15
@@ -265,7 +268,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(164, 19)
+        Me.Label3.Location = New System.Drawing.Point(161, 14)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(13, 19)
         Me.Label3.TabIndex = 16
@@ -275,7 +278,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(263, 19)
+        Me.Label4.Location = New System.Drawing.Point(260, 14)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(13, 19)
         Me.Label4.TabIndex = 17
@@ -285,7 +288,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(361, 19)
+        Me.Label5.Location = New System.Drawing.Point(358, 14)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(13, 19)
         Me.Label5.TabIndex = 18
@@ -295,7 +298,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(103, 51)
+        Me.Label6.Location = New System.Drawing.Point(100, 46)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(13, 19)
         Me.Label6.TabIndex = 19
@@ -305,7 +308,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(180, 51)
+        Me.Label7.Location = New System.Drawing.Point(177, 46)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(13, 19)
         Me.Label7.TabIndex = 20
@@ -315,7 +318,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(293, 51)
+        Me.Label8.Location = New System.Drawing.Point(290, 46)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(13, 19)
         Me.Label8.TabIndex = 21
@@ -325,7 +328,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(191, 84)
+        Me.Label9.Location = New System.Drawing.Point(188, 79)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(13, 19)
         Me.Label9.TabIndex = 22
@@ -335,7 +338,7 @@ Partial Class frmCompatibilidad
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Lato Heavy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(297, 84)
+        Me.Label10.Location = New System.Drawing.Point(294, 79)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(13, 19)
         Me.Label10.TabIndex = 23
@@ -365,22 +368,24 @@ Partial Class frmCompatibilidad
         Me.Panel1.Controls.Add(Me.lklCapricornio)
         Me.Panel1.Controls.Add(Me.lklPiscis)
         Me.Panel1.Controls.Add(Me.lklAcuario)
-        Me.Panel1.Location = New System.Drawing.Point(19, 192)
+        Me.Panel1.Location = New System.Drawing.Point(12, 171)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(459, 121)
+        Me.Panel1.Size = New System.Drawing.Size(433, 115)
         Me.Panel1.TabIndex = 24
         '
         'btnVer
         '
-        Me.btnVer.Location = New System.Drawing.Point(214, 151)
+        Me.btnVer.Location = New System.Drawing.Point(195, 142)
         Me.btnVer.Name = "btnVer"
         Me.btnVer.Size = New System.Drawing.Size(66, 23)
         Me.btnVer.TabIndex = 25
         Me.btnVer.Text = "Ver"
         Me.btnVer.UseVisualStyleBackColor = True
+        Me.btnVer.Visible = False
         '
         'bgPanel
         '
+        Me.bgPanel.Controls.Add(Me.pbComp)
         Me.bgPanel.Controls.Add(Me.PictureBox1)
         Me.bgPanel.Controls.Add(Me.btnVer)
         Me.bgPanel.Controls.Add(Me.PictureBox2)
@@ -389,16 +394,34 @@ Partial Class frmCompatibilidad
         Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bgPanel.Location = New System.Drawing.Point(0, 0)
         Me.bgPanel.Name = "bgPanel"
-        Me.bgPanel.Size = New System.Drawing.Size(496, 336)
+        Me.bgPanel.Size = New System.Drawing.Size(456, 300)
         Me.bgPanel.TabIndex = 26
+        '
+        'pbComp
+        '
+        Me.pbComp.BackColor = System.Drawing.Color.Transparent
+        Me.pbComp.Location = New System.Drawing.Point(196, 12)
+        Me.pbComp.Name = "pbComp"
+        Me.pbComp.Size = New System.Drawing.Size(64, 64)
+        Me.pbComp.TabIndex = 26
+        Me.pbComp.TabStop = False
+        '
+        'ImageList2
+        '
+        Me.ImageList2.ImageStream = CType(resources.GetObject("ImageList2.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList2.Images.SetKeyName(0, "corazon_64.png")
+        Me.ImageList2.Images.SetKeyName(1, "neutral-64.png")
+        Me.ImageList2.Images.SetKeyName(2, "x-64.png")
         '
         'frmCompatibilidad
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(496, 336)
+        Me.ClientSize = New System.Drawing.Size(456, 300)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmCompatibilidad"
@@ -411,6 +434,7 @@ Partial Class frmCompatibilidad
         Me.Panel1.PerformLayout()
         Me.bgPanel.ResumeLayout(False)
         Me.bgPanel.PerformLayout()
+        CType(Me.pbComp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -443,4 +467,6 @@ Partial Class frmCompatibilidad
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnVer As Button
     Friend WithEvents bgPanel As Panel
+    Friend WithEvents pbComp As PictureBox
+    Friend WithEvents ImageList2 As ImageList
 End Class

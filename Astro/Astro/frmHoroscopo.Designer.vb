@@ -292,9 +292,11 @@ Partial Class frmHoroscopo
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Lato Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(3, 21)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TextBox1.Size = New System.Drawing.Size(532, 93)
         Me.TextBox1.TabIndex = 1
         '
@@ -305,6 +307,7 @@ Partial Class frmHoroscopo
         Me.ClientSize = New System.Drawing.Size(569, 553)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmHoroscopo"

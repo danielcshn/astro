@@ -50,6 +50,9 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>astro.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack, Version=1.11.52.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.11.52\lib\Net45\HtmlAgilityPack.dll</HintPath>
@@ -160,6 +163,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="astro.ico" />
+    <Content Include="astrologia.ico" />
     <Content Include="Fonts\Lato-Regular.ttf" />
     <Content Include="Fonts\Lato-Black.ttf" />
     <Content Include="Fonts\Lato-Bold.ttf" />
