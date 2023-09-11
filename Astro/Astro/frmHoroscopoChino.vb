@@ -1,10 +1,49 @@
 ﻿Imports System.Drawing.Drawing2D
+Imports System.Text.RegularExpressions
 Imports HtmlAgilityPack
 
 Public Class frmHoroscopoChino
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
-        MsgBox(calcularSignoChino(txtAnno.Text))
+
+        If validaEntradaTextBox(txtAnno) Then
+            MsgBox(calcularSignoChino(txtAnno.Text))
+        Else
+            MessageBox.Show("El TextBox no cumple con los criterios.")
+        End If
+
     End Sub
+
+    Function validaEntradaTextBox(ByVal txtBox As TextBox) As Boolean
+
+        Dim annoInicial As Integer = 1900 ' Año inicial del rango
+        Dim annoActual As DateTime = DateTime.Now
+        Dim annoFinal As Integer = annoActual.Year   ' Año final del rango
+
+        Dim valido As Boolean = False
+
+        ' Verifica que el TextBox no esta vacio o es nulo:
+        If Not String.IsNullOrEmpty(txtBox.Text) Then
+            ' Regex para validar cuatro dígitos
+            Dim regex As New Regex("^\d{4}$")
+
+            ' Verifica si el texto coincide con la expresión regular
+            If regex.IsMatch(txtBox.Text) Then
+                ' El TextBox contiene 4 números
+
+                ' Convertimos el contenido del TextBox a un valor numérico (año)
+                Dim año As Integer
+                If Integer.TryParse(txtBox.Text, año) Then
+                    ' Verificamos si el año está dentro del rango especificado
+                    If año >= annoInicial AndAlso año <= annoFinal Then
+                        valido = True ' El TextBox contiene 4 números y está en el rango de años
+                    End If
+                End If
+            End If
+        End If
+
+        Return valido ' El TextBox no cumple con los criterios
+
+    End Function
 
     Public Shared Function calcularSignoChino(ByVal anno As String) As String
 
@@ -95,27 +134,29 @@ Public Class frmHoroscopoChino
 
     Public Shared Function verSignoChino(ByVal signoactual As String) As String
 
-        ' Horoscopo Diario Fuente:
+        ' Horoscopo Chino La Vanguardia Fuente:
         ' https://www.lavanguardia.com/horoscopo/horoscopo-chino/signo-mono
 
+        ' 
         Dim url As String = "https://www.lavanguardia.com/horoscopo/horoscopo-chino/signo-" + signoactual
         Dim resultado As String = ""
 
         Dim web As New HtmlWeb()
         Dim doc As HtmlDocument = web.Load(url)
-
+        ' Se parsea la web con el xpath del elemento requerido
         Dim xpathExpression As String = "//*[@id='main']/div/section[1]/div/div/div"
         Dim nodes As HtmlNodeCollection = doc.DocumentNode.SelectNodes(xpathExpression)
-
+        ' Se recorren los nodos principales y se toma el primer nodo referido al elemento del xpath
         If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
             For Each node As HtmlNode In nodes
                 Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
                 resultado = nodes(0).InnerHtml
             Next
         Else
-            Console.WriteLine("No matching nodes found.")
+            Console.WriteLine("No se encontro el Horoscopo")
         End If
 
+        ' Se realizan operaciones para limpiar la salida.
         If resultado.Length >= 4 Then
             resultado = resultado.Substring(4)
         Else
