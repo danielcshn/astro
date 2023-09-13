@@ -8,6 +8,10 @@ Imports HtmlAgilityPack
 ' Autor: https://www.flaticon.es/autores/freepik
 
 Public Class frmHoroscopoChino
+
+    Public signoFinal As String
+    Public signoHoroscopo As String
+
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
 
         If validaEntradaTextBox(txtAnno) Then
@@ -95,51 +99,87 @@ Public Class frmHoroscopoChino
     End Function
 
     Private Sub btnMono_Click(sender As Object, e As EventArgs) Handles btnMono.Click
-        TextBox1.Text = verSignoChino("mono")
+        signoFinal = "mono"
+        signoHoroscopo = verSignoChino("mono")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnRata_Click(sender As Object, e As EventArgs) Handles btnRata.Click
-        TextBox1.Text = verSignoChino("rata")
+        signoFinal = "rata"
+        signoHoroscopo = verSignoChino("rata")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnTigre_Click(sender As Object, e As EventArgs) Handles btnTigre.Click
-        TextBox1.Text = verSignoChino("tigre")
+        signoFinal = "tigre"
+        signoHoroscopo = verSignoChino("tigre")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnBuey_Click(sender As Object, e As EventArgs) Handles btnBuey.Click
-        TextBox1.Text = verSignoChino("buey")
+        signoFinal = "buey"
+        signoHoroscopo = verSignoChino("buey")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnConejo_Click(sender As Object, e As EventArgs) Handles btnConejo.Click
-        TextBox1.Text = verSignoChino("conejo")
+        signoFinal = "conejo"
+        signoHoroscopo = verSignoChino("conejo")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnDragon_Click(sender As Object, e As EventArgs) Handles btnDragon.Click
-        TextBox1.Text = verSignoChino("dragon")
+        signoFinal = "dragon"
+        signoHoroscopo = verSignoChino("dragon")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnCaballo_Click(sender As Object, e As EventArgs) Handles btnCaballo.Click
-        TextBox1.Text = verSignoChino("caballo")
+        signoFinal = "caballo"
+        signoHoroscopo = verSignoChino("caballo")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnSerpiente_Click(sender As Object, e As EventArgs) Handles btnSerpiente.Click
-        TextBox1.Text = verSignoChino("serpiente")
+        signoFinal = "serpiente"
+        signoHoroscopo = verSignoChino("serpiente")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnCabra_Click(sender As Object, e As EventArgs) Handles btnCabra.Click
-        TextBox1.Text = verSignoChino("cabra")
+        signoFinal = "cabra"
+        signoHoroscopo = verSignoChino("cabra")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnPerro_Click(sender As Object, e As EventArgs) Handles btnPerro.Click
-        TextBox1.Text = verSignoChino("perro")
+        signoFinal = "perro"
+        signoHoroscopo = verSignoChino("perro")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnGallo_Click(sender As Object, e As EventArgs) Handles btnGallo.Click
-        TextBox1.Text = verSignoChino("gallo")
+        signoFinal = "gallo"
+        signoHoroscopo = verSignoChino("gallo")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Private Sub btnCerdo_Click(sender As Object, e As EventArgs) Handles btnCerdo.Click
-        TextBox1.Text = verSignoChino("cerdo")
+        signoFinal = "cerdo"
+        signoHoroscopo = verSignoChino("cerdo")
+        Dim m As frmMsgResultadoHoroscopo = New frmMsgResultadoHoroscopo(signoFinal, signoHoroscopo)
+        Dim dg As DialogResult = m.ShowDialog()
     End Sub
 
     Public Shared Function verSignoChino(ByVal signoactual As String) As String

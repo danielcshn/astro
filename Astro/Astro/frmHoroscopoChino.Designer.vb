@@ -39,12 +39,8 @@ Partial Class frmHoroscopoChino
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCalcular = New System.Windows.Forms.Button()
         Me.txtAnno = New System.Windows.Forms.TextBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.bgPanel = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.bgPanel.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -253,39 +249,9 @@ Partial Class frmHoroscopoChino
         Me.txtAnno.Size = New System.Drawing.Size(114, 20)
         Me.txtAnno.TabIndex = 0
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(12, 517)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(538, 117)
-        Me.Panel2.TabIndex = 16
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 5)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Horoscopo"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Lato Light", 14.25!)
-        Me.TextBox1.Location = New System.Drawing.Point(3, 21)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(532, 93)
-        Me.TextBox1.TabIndex = 1
-        '
         'bgPanel
         '
         Me.bgPanel.Controls.Add(Me.btnRata)
-        Me.bgPanel.Controls.Add(Me.Panel2)
         Me.bgPanel.Controls.Add(Me.btnTigre)
         Me.bgPanel.Controls.Add(Me.Panel1)
         Me.bgPanel.Controls.Add(Me.btnBuey)
@@ -301,14 +267,14 @@ Partial Class frmHoroscopoChino
         Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bgPanel.Location = New System.Drawing.Point(0, 0)
         Me.bgPanel.Name = "bgPanel"
-        Me.bgPanel.Size = New System.Drawing.Size(564, 651)
+        Me.bgPanel.Size = New System.Drawing.Size(564, 528)
         Me.bgPanel.TabIndex = 17
         '
         'frmHoroscopoChino
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(564, 651)
+        Me.ClientSize = New System.Drawing.Size(564, 528)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -320,8 +286,6 @@ Partial Class frmHoroscopoChino
         Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.bgPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -343,8 +307,5 @@ Partial Class frmHoroscopoChino
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCalcular As Button
     Friend WithEvents txtAnno As TextBox
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents bgPanel As Panel
 End Class

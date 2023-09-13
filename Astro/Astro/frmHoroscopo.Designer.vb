@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmHoroscopo
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmHoroscopo
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHoroscopo))
         Me.bgPanel = New System.Windows.Forms.Panel()
@@ -36,11 +36,7 @@ Partial Class frmHoroscopo
         Me.btnGeminis = New System.Windows.Forms.Button()
         Me.btnTauro = New System.Windows.Forms.Button()
         Me.btnAries = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.bgPanel.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'bgPanel
@@ -58,11 +54,10 @@ Partial Class frmHoroscopo
         Me.bgPanel.Controls.Add(Me.btnGeminis)
         Me.bgPanel.Controls.Add(Me.btnTauro)
         Me.bgPanel.Controls.Add(Me.btnAries)
-        Me.bgPanel.Controls.Add(Me.Panel2)
         Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bgPanel.Location = New System.Drawing.Point(0, 0)
         Me.bgPanel.Name = "bgPanel"
-        Me.bgPanel.Size = New System.Drawing.Size(569, 553)
+        Me.bgPanel.Size = New System.Drawing.Size(569, 431)
         Me.bgPanel.TabIndex = 5
         '
         'btnPiscis
@@ -271,40 +266,11 @@ Partial Class frmHoroscopo
         Me.btnAries.UseCompatibleTextRendering = True
         Me.btnAries.UseVisualStyleBackColor = True
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(16, 421)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(538, 117)
-        Me.Panel2.TabIndex = 15
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 5)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Horoscopo"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Lato Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(3, 21)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(532, 93)
-        Me.TextBox1.TabIndex = 1
-        '
         'frmHoroscopo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(569, 553)
+        Me.ClientSize = New System.Drawing.Size(569, 431)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -316,8 +282,6 @@ Partial Class frmHoroscopo
         Me.TopMost = True
         Me.bgPanel.ResumeLayout(False)
         Me.bgPanel.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -335,7 +299,4 @@ Partial Class frmHoroscopo
     Friend WithEvents btnGeminis As Button
     Friend WithEvents btnTauro As Button
     Friend WithEvents btnAries As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
 End Class

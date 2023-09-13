@@ -103,6 +103,7 @@ Partial Class frmMsgSignoChino
         Me.ClientSize = New System.Drawing.Size(425, 159)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmMsgSignoChino"
