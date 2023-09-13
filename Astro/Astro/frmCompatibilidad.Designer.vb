@@ -67,7 +67,7 @@ Partial Class frmCompatibilidad
         Me.ImageList1.TransparentColor = System.Drawing.Color.White
         Me.ImageList1.Images.SetKeyName(0, "cancer-pro_256.png")
         Me.ImageList1.Images.SetKeyName(1, "virgo-pro_256.png")
-        Me.ImageList1.Images.SetKeyName(2, "escorpion-pro_256.png")
+        Me.ImageList1.Images.SetKeyName(2, "escorpio-pro_256.png")
         Me.ImageList1.Images.SetKeyName(3, "geminis-pro_256.png")
         Me.ImageList1.Images.SetKeyName(4, "capricornio-pro_256.png")
         Me.ImageList1.Images.SetKeyName(5, "acuario-pro_256.png")
