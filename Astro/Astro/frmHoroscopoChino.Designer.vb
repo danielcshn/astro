@@ -40,6 +40,7 @@ Partial Class frmHoroscopoChino
         Me.btnCalcular = New System.Windows.Forms.Button()
         Me.txtAnno = New System.Windows.Forms.TextBox()
         Me.bgPanel = New System.Windows.Forms.Panel()
+        Me.lblSigno = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.bgPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -226,14 +227,16 @@ Partial Class frmHoroscopoChino
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Lato Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(13, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(144, 26)
+        Me.Label1.Size = New System.Drawing.Size(143, 26)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Escribe tu año de nacimiento" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "para conocer tu signo"
         '
         'btnCalcular
         '
+        Me.btnCalcular.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalcular.Location = New System.Drawing.Point(136, 46)
         Me.btnCalcular.Name = "btnCalcular"
         Me.btnCalcular.Size = New System.Drawing.Size(119, 23)
@@ -243,14 +246,17 @@ Partial Class frmHoroscopoChino
         '
         'txtAnno
         '
+        Me.txtAnno.Font = New System.Drawing.Font("Lato", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAnno.Location = New System.Drawing.Point(16, 47)
         Me.txtAnno.MaxLength = 4
         Me.txtAnno.Name = "txtAnno"
-        Me.txtAnno.Size = New System.Drawing.Size(114, 20)
+        Me.txtAnno.Size = New System.Drawing.Size(114, 21)
         Me.txtAnno.TabIndex = 0
+        Me.txtAnno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'bgPanel
         '
+        Me.bgPanel.Controls.Add(Me.lblSigno)
         Me.bgPanel.Controls.Add(Me.btnRata)
         Me.bgPanel.Controls.Add(Me.btnTigre)
         Me.bgPanel.Controls.Add(Me.Panel1)
@@ -270,6 +276,18 @@ Partial Class frmHoroscopoChino
         Me.bgPanel.Size = New System.Drawing.Size(564, 528)
         Me.bgPanel.TabIndex = 17
         '
+        'lblSigno
+        '
+        Me.lblSigno.AutoSize = True
+        Me.lblSigno.BackColor = System.Drawing.Color.Transparent
+        Me.lblSigno.Font = New System.Drawing.Font("Lato", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSigno.ForeColor = System.Drawing.Color.Gold
+        Me.lblSigno.Location = New System.Drawing.Point(12, 10)
+        Me.lblSigno.Name = "lblSigno"
+        Me.lblSigno.Size = New System.Drawing.Size(188, 84)
+        Me.lblSigno.TabIndex = 13
+        Me.lblSigno.Text = "Horoscopo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Chino"
+        '
         'frmHoroscopoChino
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -287,6 +305,7 @@ Partial Class frmHoroscopoChino
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.bgPanel.ResumeLayout(False)
+        Me.bgPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -308,4 +327,5 @@ Partial Class frmHoroscopoChino
     Friend WithEvents btnCalcular As Button
     Friend WithEvents txtAnno As TextBox
     Friend WithEvents bgPanel As Panel
+    Friend WithEvents lblSigno As Label
 End Class

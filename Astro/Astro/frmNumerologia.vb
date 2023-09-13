@@ -8,6 +8,21 @@ Public Class frmNumerologia
 
     Private Sub frmNumerologia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        ' Inicial
+        ' 586; 244
+        Me.Width = 586
+        Me.Height = 244
+
+        ' Calcula la nueva posición para centrar el formulario en la pantalla.
+        Dim screenWidth As Integer = Screen.PrimaryScreen.WorkingArea.Width
+        Dim screenHeight As Integer = Screen.PrimaryScreen.WorkingArea.Height
+
+        Dim newLeft As Integer = (screenWidth - Me.Width) \ 2
+        Dim newTop As Integer = (screenHeight - Me.Height) \ 2
+
+        ' Establece la nueva posición del formulario.
+        Me.Location = New Point(newLeft, newTop)
+
         ' cargo los dias
         For dia As Integer = 1 To 31
             ComboBox1.Items.Add(dia.ToString())
@@ -31,6 +46,8 @@ Public Class frmNumerologia
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
+        lblNumeroFinal.Text = "?"
+
         ' Calculo numero
         Dim numeroStr As String
         numeroStr = ComboBox1.Text & mesNumero(ComboBox2.Text).ToString & ComboBox3.Text
@@ -45,7 +62,8 @@ Public Class frmNumerologia
                 ' Convierte el carácter en un número y suma al resultado
                 resultado += Integer.Parse(c.ToString())
             Else
-                Console.WriteLine("El string contiene caracteres no numéricos.")
+                ' Debug:
+                'Console.WriteLine("El string contiene caracteres no numéricos.")
                 Exit Sub
             End If
         Next
@@ -60,12 +78,28 @@ Public Class frmNumerologia
             resultado = nuevoResultado
         End While
 
-        Console.WriteLine("El resultado final es: " & resultado)
+        ' Debug:
+        'Console.WriteLine("El resultado final es: " & resultado)
         lblNumeroFinal.Text = resultado
 
 
         txtPrediccion.Text = "Cargado Predicción Semanal..."
         txtPrediccion.Text = verPrediccionSemanal(resultado)
+
+        ' Final
+        ' 586; 547
+        Me.Width = 586
+        Me.Height = 547
+
+        ' Calcula la nueva posición para centrar el formulario en la pantalla.
+        Dim screenWidth As Integer = Screen.PrimaryScreen.WorkingArea.Width
+        Dim screenHeight As Integer = Screen.PrimaryScreen.WorkingArea.Height
+
+        Dim newLeft As Integer = (screenWidth - Me.Width) \ 2
+        Dim newTop As Integer = (screenHeight - Me.Height) \ 2
+
+        ' Establece la nueva posición del formulario.
+        Me.Location = New Point(newLeft, newTop)
 
     End Sub
 
@@ -122,11 +156,14 @@ Public Class frmNumerologia
 
         If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
             For Each node As HtmlNode In nodes
-                Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
+                ' Debug:
+                'Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
                 resultado = nodes(0).InnerHtml
             Next
         Else
-            Console.WriteLine("No matching nodes found.")
+            ' Debug:
+            'Console.WriteLine("No matching nodes found.")
+            resultado = "No se pudo definir la Numerología de la Semana"
         End If
 
         If resultado.Length >= 4 Then
@@ -145,5 +182,16 @@ Public Class frmNumerologia
 
         ' Fill the PictureBox with the gradient background.
         e.Graphics.FillRectangle(gradientBrush, rect)
+    End Sub
+
+    Private Sub lklCopiar_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklCopiar.LinkClicked
+        Clipboard.SetText("Tu número es el: " & lblNumeroFinal.Text & vbCrLf & txtPrediccion.Text)
+        lklCopiar.Text = "COPIADO"
+        Timer1.Start()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        lklCopiar.Text = "COPIAR"
+        Timer1.Stop()
     End Sub
 End Class

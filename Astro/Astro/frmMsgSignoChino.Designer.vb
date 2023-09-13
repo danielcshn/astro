@@ -63,9 +63,9 @@ Partial Class frmMsgSignoChino
         Me.lblSignoChino.ForeColor = System.Drawing.Color.Gold
         Me.lblSignoChino.Location = New System.Drawing.Point(149, 76)
         Me.lblSignoChino.Name = "lblSignoChino"
-        Me.lblSignoChino.Size = New System.Drawing.Size(82, 42)
+        Me.lblSignoChino.Size = New System.Drawing.Size(34, 42)
         Me.lblSignoChino.TabIndex = 2
-        Me.lblSignoChino.Text = "????"
+        Me.lblSignoChino.Text = "?"
         '
         'ilSignosChino
         '

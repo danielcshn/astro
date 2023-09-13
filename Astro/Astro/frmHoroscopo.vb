@@ -111,11 +111,14 @@ Public Class frmHoroscopo
 
         If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
             For Each node As HtmlNode In nodes
-                Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
+                ' Debug:
+                'Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
                 resultado = nodes(0).InnerHtml
             Next
         Else
-            Console.WriteLine("No matching nodes found.")
+            ' Debug:
+            'Console.WriteLine("No se encontro el Horoscopo")
+            resultado = "No se encontro el Horoscopo"
         End If
 
         If resultado.Length >= 4 Then
@@ -130,9 +133,10 @@ Public Class frmHoroscopo
     Private Sub bgPanel_Paint(sender As Object, e As PaintEventArgs) Handles bgPanel.Paint
         ' Create a LinearGradientBrush for the gradient background.
         Dim rect As New Rectangle(0, 0, bgPanel.Width, bgPanel.Height)
-        Dim gradientBrush As New LinearGradientBrush(rect, Color.Cyan, Color.DarkCyan, LinearGradientMode.ForwardDiagonal)
+        Dim gradientBrush As New LinearGradientBrush(rect, Color.DarkCyan, Color.Cyan, LinearGradientMode.ForwardDiagonal)
 
         ' Fill the PictureBox with the gradient background.
         e.Graphics.FillRectangle(gradientBrush, rect)
     End Sub
+
 End Class

@@ -16,13 +16,11 @@ Public Class frmHoroscopoChino
 
         If validaEntradaTextBox(txtAnno) Then
             'MsgBox(calcularSignoChino(txtAnno.Text))
-
             Dim signoFinal As String = calcularSignoChino(txtAnno.Text)
             Dim m As frmMsgSignoChino = New frmMsgSignoChino(signoFinal)
             Dim dg As DialogResult = m.ShowDialog()
-
         Else
-            MessageBox.Show("El TextBox no cumple con los criterios.")
+            MessageBox.Show("Debe ingresar un año valido, compuesto por 4 digitos y entre " & 1900 & "-" & DateTime.Now.Year.ToString, "Error! ", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
     End Sub
@@ -199,11 +197,14 @@ Public Class frmHoroscopoChino
         ' Se recorren los nodos principales y se toma el primer nodo referido al elemento del xpath
         If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
             For Each node As HtmlNode In nodes
-                Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
+                ' Debug:
+                'Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
                 resultado = nodes(0).InnerHtml
             Next
         Else
-            Console.WriteLine("No se encontro el Horoscopo")
+            ' Debug:
+            'Console.WriteLine("No se encontro el Horoscopo")
+            resultado = "No se encontro el Horoscopo"
         End If
 
         ' Se realizan operaciones para limpiar la salida.

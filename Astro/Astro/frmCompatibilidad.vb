@@ -28,11 +28,11 @@ Public Class frmCompatibilidad
                 pBox2 = signo
                 botonVer.Visible = True
 
+                ' Debug:
+                ' Console.WriteLine(pBox1)
+                ' Console.WriteLine(pBox2)
 
-                Console.WriteLine(pBox1)
-                Console.WriteLine(pBox2)
-
-                Console.WriteLine(VerificarCompatibilidad(pBox1, pBox2))
+                ' Console.WriteLine(VerificarCompatibilidad(pBox1, pBox2))
 
                 ' Base: https://www.clara.es/horoscopo/test-signo-pareja-ideal_11763
                 pbComp.Image = ImageList2.Images(VerificarCompatibilidad(pBox1, pBox2))
@@ -117,11 +117,14 @@ Public Class frmCompatibilidad
 
         If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
             For Each node As HtmlNode In nodes
-                Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
+                ' Debug:
+                ' Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
                 resultado = nodes(0).InnerHtml
             Next
         Else
-            Console.WriteLine("No matching nodes found.")
+            ' Debug:
+            ' Console.WriteLine("No matching nodes found.")
+            resultado = "No se encontraron resultados!"
         End If
 
         If resultado.Length >= 4 Then

@@ -76,6 +76,9 @@ Public Class frmMsgResultadoHoroscopo
     End Sub
 
     Private Sub frmMsgResultadoHoroscopo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        lklCopiar.Focus()
+
         ' Crea un objeto GraphicsPath para definir la forma del borde redondeado
         Dim path As New GraphicsPath()
 
@@ -93,5 +96,22 @@ Public Class frmMsgResultadoHoroscopo
 
         ' Asigna el objeto GraphicsPath a la propiedad Region del formulario
         Me.Region = New Region(path)
+    End Sub
+
+    Private Sub txtHoroscopo_MouseDown(sender As Object, e As MouseEventArgs) Handles txtHoroscopo.MouseDown
+        txtHoroscopo.SelectionLength = 0
+    End Sub
+
+    Private Sub lklCopiar_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lklCopiar.LinkClicked
+
+        Clipboard.SetText("Horoscopo " & lblSigno.Text & vbCrLf & txtHoroscopo.Text)
+        lklCopiar.Text = "COPIADO"
+        Timer1.Start()
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        lklCopiar.Text = "COPIAR"
+        Timer1.Stop()
     End Sub
 End Class

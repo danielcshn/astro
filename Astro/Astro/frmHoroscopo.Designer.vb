@@ -24,6 +24,7 @@ Partial Class frmHoroscopo
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHoroscopo))
         Me.bgPanel = New System.Windows.Forms.Panel()
+        Me.lblSigno = New System.Windows.Forms.Label()
         Me.btnPiscis = New System.Windows.Forms.Button()
         Me.btnAcuario = New System.Windows.Forms.Button()
         Me.btnCapricornio = New System.Windows.Forms.Button()
@@ -42,6 +43,7 @@ Partial Class frmHoroscopo
         'bgPanel
         '
         Me.bgPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.bgPanel.Controls.Add(Me.lblSigno)
         Me.bgPanel.Controls.Add(Me.btnPiscis)
         Me.bgPanel.Controls.Add(Me.btnAcuario)
         Me.bgPanel.Controls.Add(Me.btnCapricornio)
@@ -57,8 +59,20 @@ Partial Class frmHoroscopo
         Me.bgPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bgPanel.Location = New System.Drawing.Point(0, 0)
         Me.bgPanel.Name = "bgPanel"
-        Me.bgPanel.Size = New System.Drawing.Size(569, 431)
+        Me.bgPanel.Size = New System.Drawing.Size(565, 520)
         Me.bgPanel.TabIndex = 5
+        '
+        'lblSigno
+        '
+        Me.lblSigno.AutoSize = True
+        Me.lblSigno.BackColor = System.Drawing.Color.Transparent
+        Me.lblSigno.Font = New System.Drawing.Font("Lato", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSigno.ForeColor = System.Drawing.Color.Gold
+        Me.lblSigno.Location = New System.Drawing.Point(12, 9)
+        Me.lblSigno.Name = "lblSigno"
+        Me.lblSigno.Size = New System.Drawing.Size(304, 84)
+        Me.lblSigno.TabIndex = 15
+        Me.lblSigno.Text = "Horoscopo" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Signos del Zodiaco"
         '
         'btnPiscis
         '
@@ -67,7 +81,7 @@ Partial Class frmHoroscopo
         Me.btnPiscis.ForeColor = System.Drawing.Color.Black
         Me.btnPiscis.Image = CType(resources.GetObject("btnPiscis.Image"), System.Drawing.Image)
         Me.btnPiscis.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnPiscis.Location = New System.Drawing.Point(424, 285)
+        Me.btnPiscis.Location = New System.Drawing.Point(420, 375)
         Me.btnPiscis.Name = "btnPiscis"
         Me.btnPiscis.Size = New System.Drawing.Size(130, 130)
         Me.btnPiscis.TabIndex = 14
@@ -84,7 +98,7 @@ Partial Class frmHoroscopo
         Me.btnAcuario.ForeColor = System.Drawing.Color.Black
         Me.btnAcuario.Image = CType(resources.GetObject("btnAcuario.Image"), System.Drawing.Image)
         Me.btnAcuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAcuario.Location = New System.Drawing.Point(288, 285)
+        Me.btnAcuario.Location = New System.Drawing.Point(284, 375)
         Me.btnAcuario.Name = "btnAcuario"
         Me.btnAcuario.Size = New System.Drawing.Size(130, 130)
         Me.btnAcuario.TabIndex = 13
@@ -101,7 +115,7 @@ Partial Class frmHoroscopo
         Me.btnCapricornio.ForeColor = System.Drawing.Color.Black
         Me.btnCapricornio.Image = CType(resources.GetObject("btnCapricornio.Image"), System.Drawing.Image)
         Me.btnCapricornio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCapricornio.Location = New System.Drawing.Point(152, 285)
+        Me.btnCapricornio.Location = New System.Drawing.Point(148, 375)
         Me.btnCapricornio.Name = "btnCapricornio"
         Me.btnCapricornio.Size = New System.Drawing.Size(130, 130)
         Me.btnCapricornio.TabIndex = 12
@@ -118,7 +132,7 @@ Partial Class frmHoroscopo
         Me.btnSagitario.ForeColor = System.Drawing.Color.Black
         Me.btnSagitario.Image = CType(resources.GetObject("btnSagitario.Image"), System.Drawing.Image)
         Me.btnSagitario.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnSagitario.Location = New System.Drawing.Point(16, 285)
+        Me.btnSagitario.Location = New System.Drawing.Point(12, 375)
         Me.btnSagitario.Name = "btnSagitario"
         Me.btnSagitario.Size = New System.Drawing.Size(130, 130)
         Me.btnSagitario.TabIndex = 11
@@ -135,7 +149,7 @@ Partial Class frmHoroscopo
         Me.btnEscorpio.ForeColor = System.Drawing.Color.Black
         Me.btnEscorpio.Image = CType(resources.GetObject("btnEscorpio.Image"), System.Drawing.Image)
         Me.btnEscorpio.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnEscorpio.Location = New System.Drawing.Point(424, 149)
+        Me.btnEscorpio.Location = New System.Drawing.Point(420, 239)
         Me.btnEscorpio.Name = "btnEscorpio"
         Me.btnEscorpio.Size = New System.Drawing.Size(130, 130)
         Me.btnEscorpio.TabIndex = 10
@@ -152,7 +166,7 @@ Partial Class frmHoroscopo
         Me.btnLibra.ForeColor = System.Drawing.Color.Black
         Me.btnLibra.Image = CType(resources.GetObject("btnLibra.Image"), System.Drawing.Image)
         Me.btnLibra.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnLibra.Location = New System.Drawing.Point(288, 149)
+        Me.btnLibra.Location = New System.Drawing.Point(284, 239)
         Me.btnLibra.Name = "btnLibra"
         Me.btnLibra.Size = New System.Drawing.Size(130, 130)
         Me.btnLibra.TabIndex = 9
@@ -169,7 +183,7 @@ Partial Class frmHoroscopo
         Me.btnVirgo.ForeColor = System.Drawing.Color.Black
         Me.btnVirgo.Image = CType(resources.GetObject("btnVirgo.Image"), System.Drawing.Image)
         Me.btnVirgo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnVirgo.Location = New System.Drawing.Point(152, 149)
+        Me.btnVirgo.Location = New System.Drawing.Point(148, 239)
         Me.btnVirgo.Name = "btnVirgo"
         Me.btnVirgo.Size = New System.Drawing.Size(130, 130)
         Me.btnVirgo.TabIndex = 8
@@ -186,7 +200,7 @@ Partial Class frmHoroscopo
         Me.btnLeo.ForeColor = System.Drawing.Color.Black
         Me.btnLeo.Image = CType(resources.GetObject("btnLeo.Image"), System.Drawing.Image)
         Me.btnLeo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnLeo.Location = New System.Drawing.Point(16, 149)
+        Me.btnLeo.Location = New System.Drawing.Point(12, 239)
         Me.btnLeo.Name = "btnLeo"
         Me.btnLeo.Size = New System.Drawing.Size(130, 130)
         Me.btnLeo.TabIndex = 7
@@ -204,7 +218,7 @@ Partial Class frmHoroscopo
         Me.btnCancer.ForeColor = System.Drawing.Color.Black
         Me.btnCancer.Image = CType(resources.GetObject("btnCancer.Image"), System.Drawing.Image)
         Me.btnCancer.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCancer.Location = New System.Drawing.Point(424, 13)
+        Me.btnCancer.Location = New System.Drawing.Point(420, 103)
         Me.btnCancer.Margin = New System.Windows.Forms.Padding(5)
         Me.btnCancer.Name = "btnCancer"
         Me.btnCancer.Size = New System.Drawing.Size(130, 130)
@@ -222,7 +236,7 @@ Partial Class frmHoroscopo
         Me.btnGeminis.ForeColor = System.Drawing.Color.Black
         Me.btnGeminis.Image = CType(resources.GetObject("btnGeminis.Image"), System.Drawing.Image)
         Me.btnGeminis.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnGeminis.Location = New System.Drawing.Point(288, 13)
+        Me.btnGeminis.Location = New System.Drawing.Point(284, 103)
         Me.btnGeminis.Name = "btnGeminis"
         Me.btnGeminis.Size = New System.Drawing.Size(130, 130)
         Me.btnGeminis.TabIndex = 5
@@ -239,7 +253,7 @@ Partial Class frmHoroscopo
         Me.btnTauro.ForeColor = System.Drawing.Color.Black
         Me.btnTauro.Image = CType(resources.GetObject("btnTauro.Image"), System.Drawing.Image)
         Me.btnTauro.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnTauro.Location = New System.Drawing.Point(152, 13)
+        Me.btnTauro.Location = New System.Drawing.Point(148, 103)
         Me.btnTauro.Name = "btnTauro"
         Me.btnTauro.Size = New System.Drawing.Size(130, 130)
         Me.btnTauro.TabIndex = 4
@@ -256,7 +270,7 @@ Partial Class frmHoroscopo
         Me.btnAries.ForeColor = System.Drawing.Color.Black
         Me.btnAries.Image = CType(resources.GetObject("btnAries.Image"), System.Drawing.Image)
         Me.btnAries.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAries.Location = New System.Drawing.Point(16, 13)
+        Me.btnAries.Location = New System.Drawing.Point(12, 103)
         Me.btnAries.Name = "btnAries"
         Me.btnAries.Size = New System.Drawing.Size(130, 130)
         Me.btnAries.TabIndex = 0
@@ -270,7 +284,7 @@ Partial Class frmHoroscopo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(569, 431)
+        Me.ClientSize = New System.Drawing.Size(565, 520)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -299,4 +313,5 @@ Partial Class frmHoroscopo
     Friend WithEvents btnGeminis As Button
     Friend WithEvents btnTauro As Button
     Friend WithEvents btnAries As Button
+    Friend WithEvents lblSigno As Label
 End Class
