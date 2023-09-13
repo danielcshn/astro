@@ -11,7 +11,12 @@ Public Class frmHoroscopoChino
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
 
         If validaEntradaTextBox(txtAnno) Then
-            MsgBox(calcularSignoChino(txtAnno.Text))
+            'MsgBox(calcularSignoChino(txtAnno.Text))
+
+            Dim signoFinal As String = calcularSignoChino(txtAnno.Text)
+            Dim m As frmMsgSignoChino = New frmMsgSignoChino(signoFinal)
+            Dim dg As DialogResult = m.ShowDialog()
+
         Else
             MessageBox.Show("El TextBox no cumple con los criterios.")
         End If
