@@ -34,12 +34,12 @@ Partial Class frmNumerologia
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lklCopiar = New System.Windows.Forms.LinkLabel()
         Me.lblNumeroFinal = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtPrediccion = New System.Windows.Forms.TextBox()
         Me.bgPanel = New System.Windows.Forms.Panel()
         Me.lblSigno = New System.Windows.Forms.Label()
-        Me.lklCopiar = New System.Windows.Forms.LinkLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -114,7 +114,7 @@ Partial Class frmNumerologia
         '
         'ComboBox3
         '
-        Me.ComboBox3.DropDownHeight = 100
+        Me.ComboBox3.DropDownHeight = 110
         Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.Font = New System.Drawing.Font("Lato", 12.0!)
         Me.ComboBox3.FormattingEnabled = True
@@ -126,7 +126,7 @@ Partial Class frmNumerologia
         '
         'ComboBox2
         '
-        Me.ComboBox2.DropDownHeight = 100
+        Me.ComboBox2.DropDownHeight = 110
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.Font = New System.Drawing.Font("Lato", 12.0!)
         Me.ComboBox2.FormattingEnabled = True
@@ -138,7 +138,7 @@ Partial Class frmNumerologia
         '
         'ComboBox1
         '
-        Me.ComboBox1.DropDownHeight = 100
+        Me.ComboBox1.DropDownHeight = 110
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
@@ -159,6 +159,21 @@ Partial Class frmNumerologia
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(545, 287)
         Me.Panel2.TabIndex = 1
+        '
+        'lklCopiar
+        '
+        Me.lklCopiar.BackColor = System.Drawing.Color.Transparent
+        Me.lklCopiar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lklCopiar.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lklCopiar.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.lklCopiar.LinkColor = System.Drawing.Color.DarkGoldenrod
+        Me.lklCopiar.Location = New System.Drawing.Point(431, 40)
+        Me.lklCopiar.Name = "lklCopiar"
+        Me.lklCopiar.Size = New System.Drawing.Size(94, 19)
+        Me.lklCopiar.TabIndex = 5
+        Me.lklCopiar.TabStop = True
+        Me.lklCopiar.Text = "COPIAR"
+        Me.lklCopiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblNumeroFinal
         '
@@ -218,21 +233,6 @@ Partial Class frmNumerologia
         Me.lblSigno.Size = New System.Drawing.Size(425, 42)
         Me.lblSigno.TabIndex = 16
         Me.lblSigno.Text = "Numerología de la Semana" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'lklCopiar
-        '
-        Me.lklCopiar.BackColor = System.Drawing.Color.Transparent
-        Me.lklCopiar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lklCopiar.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lklCopiar.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.lklCopiar.LinkColor = System.Drawing.Color.DarkGoldenrod
-        Me.lklCopiar.Location = New System.Drawing.Point(431, 40)
-        Me.lklCopiar.Name = "lklCopiar"
-        Me.lklCopiar.Size = New System.Drawing.Size(94, 19)
-        Me.lklCopiar.TabIndex = 5
-        Me.lklCopiar.TabStop = True
-        Me.lklCopiar.Text = "COPIAR"
-        Me.lklCopiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Timer1
         '

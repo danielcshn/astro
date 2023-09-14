@@ -95,7 +95,12 @@ Public Class frmCompatibilidad
     End Sub
 
     Private Sub btnVer_Click(sender As Object, e As EventArgs) Handles btnVer.Click
-        MsgBox(verCompatibilidad(pBox1, pBox2))
+        ' MsgBox(verCompatibilidad(pBox1, pBox2))
+        Dim compatibilidadFinal As String
+        compatibilidadFinal = verCompatibilidad(pBox1, pBox2)
+        Dim m As frmMsgCompatibilidad = New frmMsgCompatibilidad(compatibilidadFinal)
+        Dim dg As DialogResult = m.ShowDialog()
+
     End Sub
 
     Public Shared Function verCompatibilidad(ByVal spbox1 As String, ByVal spbox2 As String) As String

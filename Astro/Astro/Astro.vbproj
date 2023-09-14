@@ -100,6 +100,12 @@
     <Compile Include="frmHoroscopoChino.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMsgCompatibilidad.Designer.vb">
+      <DependentUpon>frmMsgCompatibilidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgCompatibilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMsgResultadoHoroscopo.Designer.vb">
       <DependentUpon>frmMsgResultadoHoroscopo.vb</DependentUpon>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHoroscopoChino.resx">
       <DependentUpon>frmHoroscopoChino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgCompatibilidad.resx">
+      <DependentUpon>frmMsgCompatibilidad.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMsgResultadoHoroscopo.resx">
       <DependentUpon>frmMsgResultadoHoroscopo.vb</DependentUpon>

@@ -76,9 +76,6 @@ Public Class frmMsgResultadoHoroscopo
     End Sub
 
     Private Sub frmMsgResultadoHoroscopo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        lklCopiar.Focus()
-
         ' Crea un objeto GraphicsPath para definir la forma del borde redondeado
         Dim path As New GraphicsPath()
 
