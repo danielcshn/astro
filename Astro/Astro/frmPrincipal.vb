@@ -25,4 +25,15 @@ Public Class frmPrincipal
         ' Fill the PictureBox with the gradient background.
         e.Graphics.FillRectangle(gradientBrush, rect)
     End Sub
+
+    '    Consideraciones
+    '    **Consultar al usuario si desea realizar otra consulta antes de abandonar la aplicación.
+
+    Private Sub frmPrincipal_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If MessageBox.Show("¿Deseas realizar otra consulta antes de abandonar la aplicación?", "Pregunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.No Then
+            e.Cancel = True ' Evita que la aplicación se cierre
+        Else
+            ' Si el usuario elige "Sí", puedes realizar acciones adicionales o simplemente permitir que la aplicación continúe
+        End If
+    End Sub
 End Class
