@@ -139,4 +139,95 @@ Public Class frmHoroscopo
         e.Graphics.FillRectangle(gradientBrush, rect)
     End Sub
 
+    ' Consideraciones
+    ' **Trabajar con fechas de manera tal que el usuario pueda ingresar su fecha de nacimiento y el sistema le indicará cual es su signo.
+
+    Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
+        Dim fechaSeleccionada As DateTime = DateTimePicker1.Value
+        Dim signo As String = ObtenerSignoZodiaco(fechaSeleccionada)
+        MessageBox.Show("El signo del zodiaco es: " & signo)
+    End Sub
+
+    Function ObtenerSignoZodiaco(fecha As DateTime) As String
+        Dim mes As Integer = fecha.Month
+        Dim dia As Integer = fecha.Day
+        Dim signo As String = ""
+
+        Select Case mes
+            Case 1
+                If dia <= 19 Then
+                    signo = "Capricornio"
+                Else
+                    signo = "Acuario"
+                End If
+            Case 2
+                If dia <= 18 Then
+                    signo = "Acuario"
+                Else
+                    signo = "Piscis"
+                End If
+            Case 3
+                If dia <= 20 Then
+                    signo = "Piscis"
+                Else
+                    signo = "Aries"
+                End If
+            Case 4
+                If dia <= 19 Then
+                    signo = "Aries"
+                Else
+                    signo = "Tauro"
+                End If
+            Case 5
+                If dia <= 20 Then
+                    signo = "Tauro"
+                Else
+                    signo = "Géminis"
+                End If
+            Case 6
+                If dia <= 20 Then
+                    signo = "Géminis"
+                Else
+                    signo = "Cáncer"
+                End If
+            Case 7
+                If dia <= 22 Then
+                    signo = "Cáncer"
+                Else
+                    signo = "Leo"
+                End If
+            Case 8
+                If dia <= 22 Then
+                    signo = "Leo"
+                Else
+                    signo = "Virgo"
+                End If
+            Case 9
+                If dia <= 22 Then
+                    signo = "Virgo"
+                Else
+                    signo = "Libra"
+                End If
+            Case 10
+                If dia <= 22 Then
+                    signo = "Libra"
+                Else
+                    signo = "Escorpio"
+                End If
+            Case 11
+                If dia <= 21 Then
+                    signo = "Escorpio"
+                Else
+                    signo = "Sagitario"
+                End If
+            Case 12
+                If dia <= 21 Then
+                    signo = "Sagitario"
+                Else
+                    signo = "Capricornio"
+                End If
+        End Select
+
+        Return signo
+    End Function
 End Class
