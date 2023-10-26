@@ -145,7 +145,11 @@ Public Class frmHoroscopo
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         Dim fechaSeleccionada As DateTime = DateTimePicker1.Value
         Dim signo As String = ObtenerSignoZodiaco(fechaSeleccionada)
-        MessageBox.Show("El signo del zodiaco es: " & signo)
+        'MessageBox.Show("El signo del zodiaco es: " & signo)
+
+        Dim m As frmMsgSignoHoroscopo = New frmMsgSignoHoroscopo(signo)
+        Dim dg As DialogResult = m.ShowDialog()
+
     End Sub
 
     Function ObtenerSignoZodiaco(fecha As DateTime) As String
