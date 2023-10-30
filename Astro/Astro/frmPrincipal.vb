@@ -1,5 +1,9 @@
 ﻿Imports System.Drawing.Drawing2D
 
+''' <summary>
+''' Formulario Principal.
+''' </summary>
+
 Public Class frmPrincipal
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         frmHoroscopo.Show()

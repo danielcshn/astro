@@ -1,5 +1,9 @@
 ﻿Imports System.Drawing.Drawing2D
 
+''' <summary>
+''' MsgBox personalizado para mostrar la Campatibilidad entre signos.
+''' </summary>
+
 Public Class frmMsgCompatibilidad
 
     Public Sub New(ByVal horoscopo As String)

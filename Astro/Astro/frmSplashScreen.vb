@@ -1,5 +1,9 @@
 ﻿Imports System.Drawing.Drawing2D
 
+''' <summary>
+''' Formulario de SplashScreen o Pantalla de Inicio.
+''' </summary>
+
 Public NotInheritable Class frmSplashScreen
 
     Private Sub SplashScreen1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

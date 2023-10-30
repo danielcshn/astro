@@ -1,5 +1,8 @@
 ﻿Imports System.Drawing.Drawing2D
-Imports HtmlAgilityPack
+
+''' <summary>
+''' Formulario de Numerologia.
+''' </summary>
 
 Public Class frmNumerologia
 
@@ -50,7 +53,7 @@ Public Class frmNumerologia
 
         ' Calculo numero
         Dim numeroStr As String
-        numeroStr = ComboBox1.Text & mesNumero(ComboBox2.Text).ToString & ComboBox3.Text
+        numeroStr = ComboBox1.Text & Acciones.mesNumero(ComboBox2.Text).ToString & ComboBox3.Text
         'MsgBox(numeroStr)
 
         Dim input As String = numeroStr
@@ -84,7 +87,7 @@ Public Class frmNumerologia
 
 
         txtPrediccion.Text = "Cargado Predicción Semanal..."
-        txtPrediccion.Text = verPrediccionSemanal(resultado)
+        txtPrediccion.Text = Acciones.verPrediccionSemanal(resultado)
 
         ' Final
         ' 586; 547
@@ -102,78 +105,6 @@ Public Class frmNumerologia
         Me.Location = New Point(newLeft, newTop)
 
     End Sub
-
-    Public Shared Function mesNumero(ByVal mes As String) As Integer
-
-        Dim numeroMes As Integer
-
-        Select Case mes.ToLower() ' Convertir a minúsculas para hacerlo insensible a mayúsculas/minúsculas.
-            Case "enero"
-                numeroMes = 1
-            Case "febrero"
-                numeroMes = 2
-            Case "marzo"
-                numeroMes = 3
-            Case "abril"
-                numeroMes = 4
-            Case "mayo"
-                numeroMes = 5
-            Case "junio"
-                numeroMes = 6
-            Case "julio"
-                numeroMes = 7
-            Case "agosto"
-                numeroMes = 8
-            Case "septiembre"
-                numeroMes = 9
-            Case "octubre"
-                numeroMes = 10
-            Case "noviembre"
-                numeroMes = 11
-            Case "diciembre"
-                numeroMes = 12
-            Case Else
-                ' Manejar el caso en que el mes ingresado no coincide con ningún nombre de mes válido.
-                numeroMes = -1 ' Puedes usar otro valor como -1 o mostrar un mensaje de error.
-        End Select
-
-        Return numeroMes
-    End Function
-
-    Public Shared Function verPrediccionSemanal(ByVal numero As String) As String
-
-        ' Predicción Semanal Fuente:
-        ' https://www.lavanguardia.com/horoscopo/numerologia-1
-
-        Dim url As String = "https://www.lavanguardia.com/horoscopo/numerologia-" + numero
-        Dim resultado As String = ""
-
-        Dim web As New HtmlWeb()
-        Dim doc As HtmlDocument = web.Load(url)
-
-        Dim xpathExpression As String = "//*[@id='main']/div/section[2]/div/div/ul/li[" + numero + "]/div/p"
-        Dim nodes As HtmlNodeCollection = doc.DocumentNode.SelectNodes(xpathExpression)
-
-        If nodes IsNot Nothing AndAlso nodes.Count > 0 Then
-            For Each node As HtmlNode In nodes
-                ' Debug:
-                'Console.WriteLine(node.InnerHtml) ' Print the inner HTML of the selected node
-                resultado = nodes(0).InnerHtml
-            Next
-        Else
-            ' Debug:
-            'Console.WriteLine("No matching nodes found.")
-            resultado = "No se pudo definir la Numerología de la Semana"
-        End If
-
-        If resultado.Length >= 4 Then
-            resultado = resultado.Substring(4)
-        Else
-            resultado = String.Empty
-        End If
-
-        Return resultado
-    End Function
 
     Private Sub bgPanel_Paint(sender As Object, e As PaintEventArgs) Handles bgPanel.Paint
         ' Create a LinearGradientBrush for the gradient background.

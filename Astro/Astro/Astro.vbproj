@@ -82,6 +82,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones.vb" />
     <Compile Include="frmCompatibilidad.Designer.vb">
       <DependentUpon>frmCompatibilidad.vb</DependentUpon>
     </Compile>

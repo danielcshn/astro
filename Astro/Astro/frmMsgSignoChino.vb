@@ -1,5 +1,9 @@
 ﻿Imports System.Drawing.Drawing2D
 
+''' <summary>
+''' MsgBox personalizado para mostrar el resultado del Signo Horoscopo Chino.
+''' </summary>
+
 Public Class frmMsgSignoChino
 
     Public Sub New(ByVal pTipo As String)
