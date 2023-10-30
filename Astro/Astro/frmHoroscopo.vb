@@ -99,11 +99,8 @@ Public Class frmHoroscopo
     End Sub
 
     Private Sub bgPanel_Paint(sender As Object, e As PaintEventArgs) Handles bgPanel.Paint
-        ' Crea un LinearGradientBrush para el fondo degradado.
         Dim rect As New Rectangle(0, 0, bgPanel.Width, bgPanel.Height)
         Dim gradientBrush As New LinearGradientBrush(rect, Color.DarkCyan, Color.Cyan, LinearGradientMode.ForwardDiagonal)
-
-        ' Llena el PictureBox con el fondo degradado.
         e.Graphics.FillRectangle(gradientBrush, rect)
     End Sub
 

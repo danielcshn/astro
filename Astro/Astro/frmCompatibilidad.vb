@@ -98,20 +98,15 @@ Public Class frmCompatibilidad
     End Sub
 
     Private Sub btnVer_Click(sender As Object, e As EventArgs) Handles btnVer.Click
-
         Dim compatibilidadFinal As String
         compatibilidadFinal = Acciones.verCompatibilidad(pBox1, pBox2)
         Dim m As frmMsgCompatibilidad = New frmMsgCompatibilidad(compatibilidadFinal)
         Dim dg As DialogResult = m.ShowDialog()
-
     End Sub
 
     Private Sub bgPanel_Paint(sender As Object, e As PaintEventArgs) Handles bgPanel.Paint
-        ' Create a LinearGradientBrush for the gradient background.
         Dim rect As New Rectangle(0, 0, bgPanel.Width, bgPanel.Height)
         Dim gradientBrush As New LinearGradientBrush(rect, Color.MediumPurple, Color.Purple, LinearGradientMode.ForwardDiagonal)
-
-        ' Fill the PictureBox with the gradient background.
         e.Graphics.FillRectangle(gradientBrush, rect)
     End Sub
 

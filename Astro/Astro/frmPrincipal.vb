@@ -22,11 +22,8 @@ Public Class frmPrincipal
     End Sub
 
     Private Sub bgPanel_Paint(sender As Object, e As PaintEventArgs) Handles bgPanel.Paint
-        ' Create a LinearGradientBrush for the gradient background.
         Dim rect As New Rectangle(0, 0, bgPanel.Width, bgPanel.Height)
         Dim gradientBrush As New LinearGradientBrush(rect, Color.Cyan, Color.MediumPurple, LinearGradientMode.ForwardDiagonal)
-
-        ' Fill the PictureBox with the gradient background.
         e.Graphics.FillRectangle(gradientBrush, rect)
     End Sub
 
