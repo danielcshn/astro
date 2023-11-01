@@ -1,5 +1,11 @@
 <div id="gotop"></div>
 
+<div align="center">
+  [<a href="README.md">English</a>] | [<a href="docs/README-ES.md">Español</a>]
+</div>
+
+<br>
+
  <!-- BANNER -->
 <div align="center">
   <a href="https://github.com/danielcshn/astro/">
