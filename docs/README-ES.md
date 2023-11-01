@@ -9,7 +9,7 @@
  <!-- BANNER -->
 <div align="center">
   <a href="https://github.com/danielcshn/astro/">
-    <img src="./imgs/logo.png" alt="Astro - Proyecto Programación Visual - ESBA Barrio Norte">
+    <img src="../imgs/logo.png" alt="Astro - Proyecto Programación Visual - ESBA Barrio Norte">
   </a>
   <p><b> ♋ Horoscopo ♊ </b></p>
   <hr>
@@ -34,13 +34,13 @@
 
 <div align="center">
   <a href="https://github.com/danielcshn/astro/">
-    <img src="./imgs/screenshot-1.png" width='50%' alt="Astro - Screenshot 1">
+    <img src="../imgs/screenshot-1.png" width='50%' alt="Astro - Screenshot 1">
   </a>
   <a href="https://github.com/danielcshn/astro/">
-    <img src="./imgs/screenshot-2.png" width='50%' alt="Astro - Screenshot 2">
+    <img src="../imgs/screenshot-2.png" width='50%' alt="Astro - Screenshot 2">
   </a>
   <a href="https://github.com/danielcshn/astro/">
-    <img src="./imgs/screenshot-3.png" width='50%' alt="Astro - Screenshot 3">
+    <img src="../imgs/screenshot-3.png" width='50%' alt="Astro - Screenshot 3">
   </a>
 </div>
 
