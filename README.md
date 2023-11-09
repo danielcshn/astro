@@ -19,14 +19,14 @@
 
 <div align="center">
   
-[![GitHub issues](https://img.shields.io/bitbucket/issues/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/issues)
+[![GitHub issues](https://img.shields.io/github/issues/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/issues)
 [![GitHub watchers](https://img.shields.io/github/watchers/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/watchers)
 [![GitHub forks](https://img.shields.io/github/forks/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/fork)
 [![GitHub stars](https://img.shields.io/github/stars/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/stargazers)
 [![License](https://img.shields.io/github/license/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/blob/main/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/danielcshn/astro?style=for-the-badge)](https://github.com/danielcshn/astro/commits/main)
 [![ESBA - Barrio Norte](https://img.shields.io/badge/ESBA_Barrio_Norte-white?style=for-the-badge&logo=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAACAkFBv/EAC8QAAEDAgUDAQYHAAAAAAAAAAIDBAUGBwABEiIyCAkTchEUI0FzkhUhKDFEYqT/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMG/8QAKREAAQIEBAQHAAAAAAAAAAAAAgMEAAEFEgYTQYERIVFhIjEyQmJx0f/aAAwDAQACEQMRAD8AqYqokimSyx5CA7izz+WJ09VHdPSt5WgUVYeOiZ8oxfTLyT8TUbKEP7ooaCHV9TCP635OoIyyuZRFOSE82WlW6EnHM5A2RO2ZZFrSJYdwplt1afTif8fdiUoZNY6F6OrTw5M9ReaSIn6m1dshzIt252ljVYcpSTgZuFU8z48ZSlvrEVFPbCAs33X0ayWRj6ysVVOS/FRxTiJSCfq8ekSw1bXXWpG8VLZVdRbp2oxycqslQdtFWq6LhPP4iSiSoiQkOJ0wF+OuysKhj6Up+ZtzSOT6ppWk0/cYkdKLxih5F+Qlt08Swru3qpWMl09DVddP03svUk/KyqrgNPxdS+jVpHjuTLbha5TEWyeeAiPlyEruvbt1hkyKN7rXr6kKAsm5f1dMAwRdvUWyHtAjJRTdtER/PE43NcURPM5JWGqWPdCqgvtFcdRapSHLj6RL7SxW64NsrfXYhRgLi0fGVDHiXlTSfNxU8Z6eQ/MS9OCVc3tNdPNWmq8oiQnKNeFuEWq/vLbV9NTd9pYph6rMGKWU5mQz47fsKoJF6Y4O1ibcrpU+bcxUErz1yWod38E8J7oPz/S7SAZ58TkB/wBq+AnUnbY6vrRSCM9Za5aE3+GuVXbQW8gTJymqQ6SUFNT4Woh28sMDt5FdSnrNOLZXcomRp2WpCQUTRJ0gQ5PG65Er5PJxULWSnH+uK1wWxsr2y0j5y+9dN4Cd13ij/9k=)](https://esbabarrionorte.edu.ar/)
-[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/danielcshn/astro/1.0.0.0/total?style=for-the-badge)](https://github.com/danielcshn/astro/releases/)
+[![GitHub Releases (by Release)](https://img.shields.io/github/downloads/danielcshn/astro/1.1.6.0/total?style=for-the-badge)](https://github.com/danielcshn/astro/releases/)
 
 </div>
 
