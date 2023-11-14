@@ -50,7 +50,7 @@
 
 - [Microsoft .NET Framework](https://dotnet.microsoft.com/es-es/download/dotnet-framework/net472) - v4.7.2
 - [Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/es/vs/older-downloads/#visual-studio-2019-and-other-products) - v16.11.27
-- [Microsoft Windows](https://www.microsoft.com/windows) - v8.1 o superior
+- [Microsoft Windows](https://www.microsoft.com/windows) - v10 o superior
 
 ---
 
